@@ -19,7 +19,7 @@ enableRobotsTXT = true
 [params]
 
   showBlog = true
-  mainSections = ['blog']
+  mainSections = ['products', 'blog'] #,'blog']
 
   googleFonts = true
 
