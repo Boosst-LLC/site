@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Simple, Light, Responsive",
   "main": "index.js",
-  "repository": "https://github.com/opera7133/tella",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opera7133/tella.git"
+  },
   "author": "wamo <ainznino@pm.me>",
   "license": "MIT",
   "scripts": {
@@ -17,11 +20,17 @@
     "@tailwindcss/typography": "^0.5.12",
     "autoprefixer": "^10.4.19",
     "concurrently": "^9.0.0",
-    "postcss": "^8.4.38",
-    "postcss-cli": "^11.0.0",
+    "postcss": "^8.5.5",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.0.1"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8"
-  }
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/opera7133/tella/issues"
+  },
+  "homepage": "https://github.com/opera7133/tella#readme"
 }
