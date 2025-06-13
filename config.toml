@@ -63,11 +63,11 @@ enableRobotsTXT = true
     url = "/services/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
+  #[[menu.main]]
+    #identifier = "blog"
+    #name = "Blog"
+    #url = "/blog/"
+    #weight = 3
 
   [[menu.main]]
     identifier = "contact"

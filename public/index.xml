@@ -9,7 +9,7 @@
     <lastBuildDate>Tue, 23 Jun 2020 12:33:45 +1000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example Project</title>
+      <title>Private EV Charging for Multifamily Housing</title>
       <link>http://localhost:1313/services/service1/</link>
       <pubDate>Tue, 23 Jun 2020 12:33:45 +1000</pubDate>
       <guid>http://localhost:1313/services/service1/</guid>
@@ -51,7 +51,7 @@
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>About Boosst</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
