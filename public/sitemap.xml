@@ -68,6 +68,12 @@
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/affordable/</loc>
+  </url><url>
+    <loc>http://localhost:1313/convenient/</loc>
+  </url><url>
+    <loc>http://localhost:1313/private/</loc>
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url>
 </urlset>
