@@ -2,17 +2,17 @@
   {
     "title": "Simple",
     "description": "All the bare necessities are there.",
-    "icon": "icon-desktop_windows"
+    "icon": "fas fa-box"
   },
   {
     "title": "Fast",
     "description": "Light weight and fast loading speed.",
-    "icon": "icon-lightbulb_outline"
+    "icon": "fas fa-bolt"
   },
   {
     "title": "Github",
     "description": "Check out our GitHub.",
-    "icon": "icon-github",
+    "icon": "fas fa-github",
     "link": "https://github.com/Boosst-LLC"
   }
 ]
