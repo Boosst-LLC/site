@@ -1,4 +1,4 @@
 [submodule "themes/tella"]
 	path = themes/tella
 	url = https://github.com/Boosst-LLC/tella.git
-	branch = main
+	branch = fix-material-symbols
