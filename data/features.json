@@ -1,18 +1,18 @@
 [
   {
-    "title": "Simple",
-    "description": "All the bare necessities are there.",
-    "icon": "fas fa-box"
+    "title": "Private",
+    "description": "Your own, dedicated private EV charger.",
+    "icon": "material-symbols-outlined ev_station"
   },
   {
-    "title": "Fast",
-    "description": "Light weight and fast loading speed.",
-    "icon": "fas fa-bolt"
+    "title": "Convenient",
+    "description": "Charge at home -- on your own schedule.",
+    "icon": "material-symbols-outlined apartment"
   },
   {
-    "title": "Github",
-    "description": "Check out our GitHub.",
-    "icon": "fas fa-github",
+    "title": "Affordable",
+    "description": "With Boosst, a private charger costs _less_ than public charging.",
+    "icon": "material-symbols-outlined savings",
     "link": "https://github.com/Boosst-LLC"
   }
 ]
