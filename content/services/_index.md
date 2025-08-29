@@ -14,4 +14,6 @@ layout: "single"
 - **Fast, Reliable Charging** – 10–40A charging speeds.  
 - **Seamless Connectivity** – Wi-Fi and Bluetooth keep charging failsafe.  
 - **Boosst App & Dashboard** – Track and manage charging anytime.  
-- **24/7 Support** – Always available help from our North America–based team.  
+- **24/7 Support** – Always available help from our North America–based team.
+
+Boosst handles everything—so property owners and management, and residents don’t have to.

@@ -6,7 +6,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-At Boosst, we believe charging your EV should be as easy as charging your phone.  
+At Boosst, we believe charging your EV should be as easy as charging your phone. At home and overnight.
 
 The reality? Nearly 95% of multifamily buildings don’t offer charging—or they provide slow, shared, unreliable stations that frustrate residents and burden property owners.  
 
