@@ -1,4 +1,4 @@
-## **Your Own, Dedicated Charger**
+## **Your Own, Dedicated Charger.**
 
 Enjoy hassle-free charging.
 
