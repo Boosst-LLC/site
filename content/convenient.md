@@ -1,3 +1,5 @@
+## **Charge at Home. On Your Schedule.**
+
 Save time, skip the fees, and ditch the hassle.
 
 With your own charger, EV charging becomes effortless.
