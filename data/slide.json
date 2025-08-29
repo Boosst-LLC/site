@@ -1,17 +1,22 @@
 [
   {
     "title": "Boosst. EV charging for multifamily.",
-    "image": "img/slide/Boosst.jpg",
+    "image": "img/slide/boosst.jpg",
     "color": "text-black"
   },
      {
     "title": "Dedicated, personal EV charging.",
-    "image": "img/slide/Wallbox.jpg",
+    "image": "img/slide/man.jpg",
     "color": "text-black"
   },
      {
     "title": "Your spot. Your charger.",
     "image": "img/slide/staircase.jpg",
     "color": "text-white"   
-  } 
+  },
+     {
+    "title": "Just park and plug in.",
+    "image": "img/slide/row.jpg",
+    "color": "text-white"
+  }   
 ]

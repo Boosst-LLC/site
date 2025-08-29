@@ -1,0 +1,18 @@
+{{/* Reusable cross-links with current page highlighted */}}
+{{ $here := .Page.RelPermalink }}
+<div class="text-center my-8 flex items-center justify-center gap-3 flex-wrap">
+  <a href='{{ relref . "/dedicated/" }}'
+     class='px-3 py-1 rounded {{ if eq $here "/dedicated/" }}font-semibold text-blue-600 underline{{ else }}text-gray-600 hover:text-blue-600{{ end }}'>
+    Dedicated
+  </a>
+  <span class="opacity-30">·</span>
+  <a href='{{ relref . "/convenient/" }}'
+     class='px-3 py-1 rounded {{ if eq $here "/convenient/" }}font-semibold text-blue-600 underline{{ else }}text-gray-600 hover:text-blue-600{{ end }}'>
+    Convenient
+  </a>
+  <span class="opacity-30">·</span>
+  <a href='{{ relref . "/affordable/" }}'
+     class='px-3 py-1 rounded {{ if eq $here "/affordable/" }}font-semibold text-blue-600 underline{{ else }}text-gray-600 hover:text-blue-600{{ end }}'>
+    Affordable
+  </a>
+</div>
