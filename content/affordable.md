@@ -1,4 +1,4 @@
-## **Avoid the Costly Inconvenience of Public EV Charging.**
+## **Avoid the Costly Inconvenience of Public Charging.**
 
 Tired of paying for more than just charging?
 

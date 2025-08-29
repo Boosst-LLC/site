@@ -1,4 +1,4 @@
-## **Charge at Home. On Your Schedule.**
+## **Charge at Home. In Your Own Spot. On Your Schedule.**
 
 Save time, skip the fees, and ditch the hassle.
 
