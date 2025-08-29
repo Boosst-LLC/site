@@ -1,4 +1,17 @@
 ---
 title: "Boosst Services"
+layout: "single"
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel. Suspendisse eu ipsum consequat, sodales nulla vel, faucibus velit. Fusce imperdiet lacus nec cursus auctor. In vulputate arcu et nulla placerat, nec pulvinar quam rhoncus. Praesent vel placerat nunc. Mauris elit felis, pulvinar egestas risus ut, fermentum ullamcorper orci. Integer tempor, neque sed fermentum eleifend, ligula est tincidunt purus, sodales semper elit enim ut mi. Vestibulum commodo tristique hendrerit. Duis interdum tristique augue id aliquam. Sed et tellus aliquam, accumsan erat at, facilisis tortor. Donec ac sapien sed lectus ullamcorper ultrices. Nullam placerat mauris nec urna rhoncus, vitae faucibus nulla venenatis. Donec vestibulum justo auctor, vestibulum diam quis, egestas erat. Vivamus volutpat et metus ut fermentum. Donec volutpat neque nec quam lacinia, nec faucibus felis ullamcorper.
+## For Property Owners & Managers
+- **Turnkey Installation** – Site feasibility, permitting, and installation included.  
+- **No CAPEX or OPEX** – We fund and manage everything.  
+- **Smart Energy Management** – Our Dynamic Load Management (DLM) technology avoids costly upgrades.  
+- **Future-Proofing** – Expandable solutions that grow with resident demand.  
+- **Increased NOI** – Attract and retain high-value tenants with a sought-after amenity.  
+
+## For Residents
+- **Your Own Charger** – No more waiting in line or fighting for a plug.  
+- **Fast, Reliable Charging** – 10–40A charging speeds.  
+- **Seamless Connectivity** – Wi-Fi and Bluetooth keep charging failsafe.  
+- **Boosst App & Dashboard** – Track and manage charging anytime.  
+- **24/7 Support** – Always available help from our North America–based team.  

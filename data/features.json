@@ -1,9 +1,9 @@
 [
   {
-    "title": "Private",
+    "title": "Dedicated",
     "description": "Your own, dedicated private EV charger.",
     "icon": "material-symbols-outlined ev_station",
-    "link": "/private"
+    "link": "/dedicated"
   },
   {
     "title": "Convenient",
