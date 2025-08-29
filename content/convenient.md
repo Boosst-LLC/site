@@ -1,5 +1,9 @@
-No more waiting, no more scheduling, no more uncertainty, no more idle fees, no more hassle!
+Save time, skip the fees, and ditch the hassle.
 
-Charging your car should be an afterthought, not a concern.
+With your own charger, EV charging becomes effortless.
 
-With your own charger - EV charging is second nature!
+Just park and go!  Stress-free overnight charging!
+
+Stop wasting time at public chargers. 
+
+With your own Boosst charger, plug in and go—charging for your EV has never been easier!
