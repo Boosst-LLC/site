@@ -1,4 +1,4 @@
-## **Your Own, Dedicated Charger.**
+## **Your Own, Dedicated Personal EV Charger.**
 
 Enjoy hassle-free charging.
 
