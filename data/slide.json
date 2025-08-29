@@ -10,13 +10,8 @@
     "color": "text-black"
   },
      {
-    "title": "Your own spot. Your own charger.",
+    "title": "Your spot. Your charger.",
     "image": "img/slide/staircase.jpg",
     "color": "text-white"   
-  },
-     {
-    "title": "Your own spot. Your own charger.",
-    "image": "img/slide/PulsarPro.jpg",
-    "color": "text-white"
-  }   
+  } 
 ]
