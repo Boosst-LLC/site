@@ -4,34 +4,9 @@
     "image": "img/slide/Boosst.jpg",
     "color": "text-black"
   },
-    {
-    "title": "Boosst, Nice car, dude...",
-    "image": "img/slide/gray car.jpg",
-    "color": "text-black"
-  },
-  {
-    "title": "Sample text here...",
-    "image": "img/slide/sleek.jpg",
-    "-color": "text-black"
-  },
-   {
-    "title": "Sample text here...",
+     {
+    "title": "Dedicated, personal EV charging.",
     "image": "img/slide/crossover.jpg",
     "-color": "text-black"
-  },
-   {
-    "title": "Sample text here...",
-    "image": "img/slide/strandoflight.jpg",
-    "-color": "text-black"
-  },
-  {
-    "title": "CHARGE NOW OR (YOUR CAR WILL) DIE",
-    "image": "img/slide/charging station.jpg",
-    "color": "text-black"
-  },
-  {
-    "title": "CHARGE NOW OR (YOUR CAR WILL) DIE",
-    "image": "img/slide/wideshot.jpg",
-    "-color": "text-black"
-  }
+  }  
 ]
