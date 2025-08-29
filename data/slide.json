@@ -8,5 +8,10 @@
     "title": "Dedicated, personal EV charging.",
     "image": "img/slide/Wallbox.jpg",
     "color": "text-black"
-  }  
+  },
+     {
+    "title": "Your own charger.",
+    "image": "img/slide/PulsarPro.jpg",
+    "-color": "text-black"
+  }   
 ]
