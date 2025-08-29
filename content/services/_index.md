@@ -16,4 +16,4 @@ layout: "single"
 - **Boosst App & Dashboard** – Track and manage charging anytime.  
 - **24/7 Support** – Always available help from our North America–based team.
 
-Boosst handles everything—so property owners and management, and residents don’t have to.
+Boosst handles everything—so property owners and management, and their residents don’t have to.
