@@ -1,4 +1,4 @@
 [submodule "themes/tella"]
 	path = themes/tella
-	url = git@github.com:Boosst-LLC/tella.git
+	url = https://github.com/Boosst-LLC/tella.git
 	branch = main
