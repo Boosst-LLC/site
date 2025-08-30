@@ -1,3 +1,7 @@
+---
+title: "Convenient EV Charging"
+hide_title: true
+---
 ## **Charge at Home. In Your Own Spot. On Your Schedule.**
 
 Save time, skip the fees, and ditch the hassle.

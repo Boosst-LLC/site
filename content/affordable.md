@@ -1,3 +1,7 @@
+---
+title: "Affordable EV Charging"
+hide_title: true
+---
 ## **Avoid the Costly Inconvenience of Public Charging.**
 
 Tired of paying for more than just charging?
