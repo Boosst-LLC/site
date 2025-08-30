@@ -43,11 +43,11 @@ enableRobotsTXT = true
     meta_og_title = "Boosst"
     meta_og_type = "website"
     meta_og_url = "https://boosst.com"
-    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
+    meta_og_image = "https://boosst.com/img/logo/boosst-preview.png"
     meta_og_description = "EV charging for multifamily"
     meta_twitter_card = "summary_large_image"
-    meta_twitter_site = "@username"
-    meta_twitter_creator = "@username"
+    meta_twitter_site = "@boosstcharging"
+    meta_twitter_creator = "@boosstcharging"
 
 [menu]
 
