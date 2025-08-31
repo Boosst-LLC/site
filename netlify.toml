@@ -29,22 +29,25 @@ HUGO_VERSION = "0.145.0"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
-# --- ADD THIS BLOCK ---
+# --- Cloudinary Build Plugin ---
 [[plugins]]
   package = "netlify-plugin-cloudinary"
 
-  # Inputs are conservative and Hugo-friendly:
-  # - Upload images from common folders
-  # - Store under a tidy folder in Cloudinary
-  # - Apply sensible defaults (auto AVIF/WebP/JPEG + smart quality + width cap)
   [plugins.inputs]
-    directories = [
-      "static/img",
-      "static/images",
-      "assets/img",
-      "assets/images"
-    ]
-    cloudinaryFolder = "site/production"
-    defaultTransform = "f_auto,q_auto,c_limit,w_1600"
-    rewriteHtml = true
-# --- END ADD ---
+    # You already set CLOUDINARY_CLOUD_NAME / API KEY / SECRET in Netlify UI.
+    # You can also set cloudName here, but it's optional if the env var exists.
+    # cloudName = "your-cloud-name"
+
+    # Where your site SERVES images from (URL paths), not filesystem folders.
+    # Hugo's /static/img -> served at /img, /static/images -> /images, etc.
+    imagesPath = ["/img", "/images", "/assets/img", "/assets/images"]
+
+    # Where to store in Cloudinary (organizes your library)
+    folder = "site/production"
+
+    # Optional: cap delivered size without changing DOM dimensions.
+    # This mimics "limit to 1600px wide" behavior.
+    [plugins.inputs.maxSize]
+      width = 1600
+      # height = 0     # omit to preserve aspect ratio
+      # dpr = "1.0"    # optionally "2.0" for high-DPR displays
