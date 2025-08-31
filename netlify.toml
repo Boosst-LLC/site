@@ -28,3 +28,23 @@ HUGO_VERSION = "0.145.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+# --- ADD THIS BLOCK ---
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  # Inputs are conservative and Hugo-friendly:
+  # - Upload images from common folders
+  # - Store under a tidy folder in Cloudinary
+  # - Apply sensible defaults (auto AVIF/WebP/JPEG + smart quality + width cap)
+  [plugins.inputs]
+    directories = [
+      "static/img",
+      "static/images",
+      "assets/img",
+      "assets/images"
+    ]
+    cloudinaryFolder = "site/production"
+    defaultTransform = "f_auto,q_auto,c_limit,w_1600"
+    rewriteHtml = true
+# --- END ADD ---
