@@ -34,7 +34,7 @@ HUGO_ENABLEGITINFO = "true"
   package = "netlify-plugin-cloudinary"
 
   [plugins.inputs]
-    # You already set CLOUDINARY_CLOUD_NAME / API KEY / SECRET in Netlify UI.
+    # You already set CLOUDINARY_CLOUD_NAME / API KEY / SECRET in Netlify UI (API KEY and SECRET removed since using fetch).
     # You can also set cloudName here, but it's optional if the env var exists.
     # cloudName = "your-cloud-name"
 
