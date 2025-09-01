@@ -48,6 +48,6 @@ HUGO_ENABLEGITINFO = "true"
     # Optional: cap delivered size without changing DOM dimensions.
     # This mimics "limit to 1600px wide" behavior.
     [plugins.inputs.maxSize]
-      width = 1600
+      width = 1000
       # height = 0     # omit to preserve aspect ratio
       # dpr = "1.0"    # optionally "2.0" for high-DPR displays
