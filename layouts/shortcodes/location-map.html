@@ -1,0 +1,80 @@
+{{ $mapID := .Get "map_id" | default (printf "boost-map-%d" now.UnixNano) }}
+{{ $zoom := .Get "zoom" | default "5" }}
+{{ $inner := trim .Inner "\n\r\t " }}
+{{ $rawRegions := slice }}
+{{ if gt (len $inner) 0 }}
+  {{ with transform.Unmarshal $inner }}
+    {{ $rawRegions = . }}
+  {{ end }}
+{{ end }}
+{{ $fallbackPoints := slice }}
+{{ if not (gt (len $rawRegions) 0) }}
+  {{ $locationsParam := .Get "locations" }}
+  {{ if $locationsParam }}
+    {{ range (split $locationsParam "|") }}
+      {{ $parts := split . "," }}
+      {{ if ge (len $parts) 3 }}
+        {{ $label := trim (index $parts 0) " " }}
+        {{ $lat := float (trim (index $parts 1) " ") }}
+        {{ $lng := float (trim (index $parts 2) " ") }}
+        {{ $point := dict "label" $label "lat" $lat "lng" $lng }}
+        {{ $fallbackPoints = $fallbackPoints | append $point }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $fallbackPoints) 0 }}
+    {{ $rawRegions = slice (dict "key" "primary" "label" (.Get "heading" | default "Deployments") "locations" $fallbackPoints) }}
+  {{ end }}
+{{ end }}
+{{ $regions := slice }}
+{{ range $rawRegions }}
+  {{ $region := . }}
+  {{ $label := index $region "label" | default (index $region "name") | default "Region" }}
+  {{ $key := index $region "key" | default (urlize (printf "%s" $label)) }}
+  {{ $locs := slice }}
+  {{ with index $region "locations" }}
+    {{ range . }}
+      {{ $lat := index . "lat" }}
+      {{ $lng := index . "lng" }}
+      {{ if and $lat $lng }}
+        {{ $locLabel := index . "label" | default "Site" }}
+        {{ $locs = $locs | append (dict "label" $locLabel "lat" (float $lat) "lng" (float $lng)) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $regions = $regions | append (dict "key" $key "label" $label "locations" $locs) }}
+{{ end }}
+{{ if not (gt (len $regions) 0) }}
+  {{ return }}
+{{ end }}
+{{ $defaultRegion := index $regions 0 }}
+{{ $defaultKey := index $defaultRegion "key" }}
+{{ $regionsEncoded := ($regions | jsonify | base64Encode) }}
+<section class="section-map" id="{{ .Get "id" | default "map" }}">
+  <div class="container">
+    <div class="map-shell">
+      <div class="map-details">
+        {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+        {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+        {{ if gt (len $regions) 1 }}
+          <div class="map-filters" role="tablist">
+            {{ range $index, $region := $regions }}
+              <button class="map-filter {{ if eq $region.key $defaultKey }}is-active{{ end }}" data-region-trigger="{{ $region.key }}" role="tab" aria-selected="{{ if eq $region.key $defaultKey }}true{{ else }}false{{ end }}">{{ $region.label }}</button>
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ range $region := $regions }}
+          <ul class="map-list {{ if ne $region.key $defaultKey }}is-hidden{{ end }}" data-region-list="{{ $region.key }}">
+            {{ range $region.locations }}
+              <li>{{ .label }}</li>
+            {{ else }}
+              <li>More sites coming soon.</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+      <div id="{{ $mapID }}" class="boost-map" data-map="true" data-zoom="{{ $zoom }}" data-default-region="{{ $defaultKey }}" data-regions="{{ $regionsEncoded }}"></div>
+    </div>
+  </div>
+</section>

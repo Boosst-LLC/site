@@ -1,0 +1,159 @@
+You are an expert front-end designer and CSS architect.
+
+Goal
+Design a custom, modern CSS stylesheet (no frameworks, no prebuilt Hugo themes) for the homepage of an EV charging business called **Boost**. This stylesheet will be used in a Hugo site for the landing page only.
+
+Visual inspiration
+Use the attached screenshots as visual reference (they are from an EV charging company called Orange, but do **not** copy their content or branding). Instead, recreate the same **visual feel**:
+
+- Clean, minimal, lots of white/very light background.
+- Slim top navigation bar with logo on the left, nav links in the middle, CTAs (Log in / Contact Sales) on the right.
+- Strong, left-aligned hero headline with generous line-height and whitespace.
+- Simple, high-contrast CTA button.
+- Sections with lots of breathing room, clear grids, subtle icons, and simple line illustrations.
+- A calm, “premium but friendly” SaaS/energy-tech aesthetic.
+
+Branding for Boost
+- Company name: **Boost**.
+- Use CSS variables for colors so I can tweak later:
+
+  ```css
+  :root {
+    --boost-bg: #f9fafb;          /* page background */
+    --boost-surface: #ffffff;     /* cards/sections */
+    --boost-text: #222222;        /* main text */
+    --boost-muted-text: #6b7280;  /* secondary text */
+    --boost-accent: #ff5c2b;      /* primary accent (Boost orange) */
+    --boost-accent-soft: rgba(255, 92, 43, 0.1);
+    --boost-border-subtle: #e5e7eb;
+  }
+````
+
+* Font: system sans stack similar to Inter / SF Pro / Segoe UI.
+* Buttons use `--boost-accent` background with white text and subtle hover states.
+
+Layout requirements
+Create CSS that assumes a simple semantic HTML structure for the landing page with these main sections and class names:
+
+1. **Site shell & nav**
+
+   * `.site-header` (fixed top, subtle bottom border, white background).
+   * `.nav-bar` as a flex container with:
+
+     * `.nav-logo` (Boost wordmark placeholder).
+     * `.nav-links` (horizontal list of links like “Why Boost?”, “Products”, “Solutions”, “Resources”).
+     * `.nav-actions` (two buttons: ghost “Log in”, filled “Contact sales”).
+   * Make nav responsive: collapse to a simple layout on mobile (stacked or menu button, but keep CSS simple).
+
+2. **Hero section**
+
+   * `.hero` full-width with large vertical padding (e.g. 6–8rem) and max-width content container (`.container`).
+   * Left-aligned copy:
+
+     * `.hero-eyebrow` (small label like “EV charging for multifamily & workplace”).
+     * `.hero-title` (big, bold heading, ~ clamp(2.8rem, 4vw, 3.6rem)).
+     * `.hero-subtitle` (muted text, narrower width, good line height).
+     * `.hero-actions` with a primary CTA button `.btn-primary` and an optional secondary link.
+   * Beneath the text (or overlapping edge) space for a full-width image/video banner `.hero-media` (e.g. cars parked and charging).
+
+3. **Pain points / problems row**
+
+   * Section class: `.section-problems`.
+   * Inside: a 4-column responsive grid `.problem-grid` that collapses on mobile.
+   * Each item uses `.problem-card` with:
+
+     * `.problem-icon` (simple line icon placeholder).
+     * `.problem-title` (short heading, e.g. “High capital cost”).
+     * `.problem-body` (short explanation).
+   * Style like the reference: light icons, clean text, no heavy borders, maybe subtle top margin between items.
+
+4. **Benefits / reliability accordions**
+
+   * Section class: `.section-benefits`.
+   * Two-column layout on desktop: text on left, image/video on right.
+
+     * `.benefits-copy` (left)
+     * `.benefits-media` (right, for a product photo).
+   * Within `.benefits-copy`, use an accordion or expandable list style:
+
+     * Parent label like `.section-label` (“Reliability” or “Simplicity”) in accent color.
+     * Each row `.benefit-item` has:
+
+       * `.benefit-header` (title + “+” icon).
+       * `.benefit-body` (hidden by default; style as if it could be revealed).
+   * Provide CSS for the accordion states using classes like `.is-open` (the JS will toggle this later).
+
+5. **Simplicity section**
+
+   * Similar two-column split, but with image left & copy right (`.section-simplicity`, `.simplicity-media`, `.simplicity-copy`).
+   * Copy uses a small label like “Simplicity” in accent and feature rows similar to above.
+
+6. **Ecosystem / illustration strip**
+
+   * Wide, light-gray section `.section-ecosystem` with a simple line drawing aesthetic:
+
+     * Basic horizontal layout with parking spots, chargers, scooters, bikes, etc. will be an SVG or image later.
+   * CSS should:
+
+     * Center the illustration.
+     * Add soft accent “halo” circles using `box-shadow`/pseudo-elements or allow for PNG/SVG halos.
+   * Use subtle top and bottom padding, but keep it airy.
+
+7. **Footer**
+
+   * `.site-footer` with subdued background (`--boost-surface`) and a border top.
+   * Space for logo, small nav columns, and legal text.
+
+General CSS rules
+
+* Use a `body` and `.container` pattern:
+
+  ```css
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--boost-text);
+    background-color: var(--boost-bg);
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+  }
+  ```
+* Large vertical spacing between sections: `padding-block: 5rem–7rem`.
+* Consistent heading hierarchy: `h1` hero on[118;1:3uly, `h2` for section titles, `h3` inside cards.
+* Buttons:
+
+  * `.btn`, `.btn-primary`, `.btn-ghost`.
+  * Rounded corners (6–999px radius, but not pills), small shadow on hover, slightly darker accent color on hover.
+* Cards/tiles: use subtle `box-shadow` or borders, but keep everything very light.
+* Icons and illustration halos in accent color with low opacity.
+
+Responsive behavior
+
+* Mobile-first CSS.
+* For screens `< 768px`:
+
+  * Stack columns in two-column sections (`flex-direction: column`, media down then text or vice versa).
+  * Reduce hero font sizes slightly with `clamp`.
+  * Ensure nav doesn’t overflow; allow wrapping or a simple stack.
+* For large screens:
+
+  * Keep hero text max-width around 36–44rem for readability.
+  * Maintain generous margins around imagery.
+
+Output format
+
+1. A single production-ready stylesheet named `boost.css` (no external libraries) using the class names and CSS variables described above.
+2. At the end, include a **very small** HTML snippet (no more than ~40–50 lines) that demonstrates how the classes are expected to be used in a Hugo `index.html` layout (just standard HTML, I’ll add Hugo templating myself). Focus on the hero, nav, one problem card row, and one benefits split section as an example.
+
+Avoid:
+
+* Any reference to the original company’s name, logo, or copy.
+* Using a prebuilt CSS framework (Tailwind, Bootstrap, etc.).
+* Overly fancy animations; at most, subtle hover transitions (`transition: 150ms ease` on buttons and links is enough).
+
+Design for **Boost** as a brand: clean, modern, easy to read, with an emphasis on making EV charging simple for residents and property owners.
+

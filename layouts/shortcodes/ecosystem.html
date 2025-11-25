@@ -1,0 +1,22 @@
+<section class="section-ecosystem" id="ecosystem">
+  <div class="container">
+    {{ with .Get "heading" }}
+      <div class="section-heading" style="margin-bottom:2rem;text-align:center;">
+        <h2>{{ . }}</h2>
+        {{ with $.Get "body" }}<p>{{ . }}</p>{{ end }}
+      </div>
+    {{ end }}
+    <div class="ecosystem-shell">
+      <div class="ecosystem-illustration">
+        {{ $media := .Get "media" }}
+        {{ if $media }}
+          {{ $resource := resources.Get (printf "img/%s" $media) }}
+          {{ if and $resource (eq $resource.MediaType.MainType "image") }}
+            {{ $img := $resource.Resize "1200x" }}
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "alt" | default "Boosst ecosystem" }}" loading="lazy">
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

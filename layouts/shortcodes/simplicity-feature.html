@@ -1,0 +1,4 @@
+<div class="simplicity-feature">
+  {{ with .Get "title" }}<strong>{{ . }}</strong>{{ end }}
+  {{ with .Inner }}<p>{{ . | markdownify }}</p>{{ end }}
+</div>

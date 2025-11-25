@@ -1,0 +1,9 @@
+<section class="section-problems" id="{{ .Get "id" | default "intro" }}" style="padding-block:4rem;">
+  <div class="container">
+    <div class="section-heading">
+      {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+      {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </div>
+</section>

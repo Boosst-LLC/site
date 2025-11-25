@@ -1,0 +1,60 @@
+{{ $mode := .Get "mode" }}
+{{ $media := .Get "media" }}
+{{ if eq $mode "background" }}
+  <section class="section-benefits section-benefits--bg" id="{{ .Get "id" | default "services" }}">
+    {{ if $media }}
+      {{ $resource := resources.Get (printf "img/%s" $media) }}
+      {{ if $resource }}
+        <div class="benefits-bg">
+          <div class="benefits-bg-overlay"></div>
+          {{ if eq $resource.MediaType.MainType "image" }}
+            {{ $img := $resource.Fill "1600x900 center" }}
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}">
+          {{ else if eq $resource.MediaType.MainType "video" }}
+            <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst services" }}">
+              <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
+            </video>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+    <div class="container">
+      <div class="benefits-card">
+        {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+        {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+        <div class="benefit-list">
+          {{ .Inner }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ else }}
+  <section class="section-benefits" id="{{ .Get "id" | default "services" }}">
+    <div class="container">
+      <div class="benefits-copy">
+        {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+        {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+        <div class="benefit-list">
+          {{ .Inner }}
+        </div>
+      </div>
+      <div class="benefits-media">
+        {{ if $media }}
+          {{ $resource := resources.Get (printf "img/%s" $media) }}
+          {{ if $resource }}
+            {{ if eq $resource.MediaType.MainType "image" }}
+              {{ $img := $resource.Fill "1200x900 center" }}
+              <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}" loading="lazy">
+            {{ else if eq $resource.MediaType.MainType "video" }}
+              <video autoplay muted loop playsinline controlslist="nodownload" aria-label="{{ .Get "media_alt" | default "Boosst video" }}">
+                <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
+              </video>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

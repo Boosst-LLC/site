@@ -1,0 +1,5 @@
+<article class="problem-card">
+  {{ with .Get "icon" }}<div class="problem-icon">{{ . | safeHTML }}</div>{{ end }}
+  {{ with .Get "title" }}<h3 class="problem-title">{{ . }}</h3>{{ end }}
+  {{ with .Get "body" }}<p class="problem-body">{{ . }}</p>{{ end }}
+</article>

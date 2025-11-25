@@ -1,0 +1,28 @@
+<section class="section-simplicity" id="{{ .Get "id" | default "residents" }}">
+  <div class="container">
+    <div class="simplicity-media">
+      {{ $media := .Get "media" }}
+      {{ if $media }}
+        {{ $resource := resources.Get (printf "img/%s" $media) }}
+        {{ if $resource }}
+          {{ if eq $resource.MediaType.MainType "image" }}
+            {{ $img := $resource.Fill "1100x900 center" }}
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst simplicity" }}" loading="lazy">
+          {{ else if eq $resource.MediaType.MainType "video" }}
+            <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst simplicity" }}">
+              <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
+            </video>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="simplicity-copy">
+      {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+      {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+      <div class="feature-list">
+        {{ .Inner }}
+      </div>
+    </div>
+  </div>
+</section>

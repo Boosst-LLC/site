@@ -1,0 +1,34 @@
+<section class="hero" id="top">
+  {{ $media := .Get "media" }}
+  {{ if $media }}
+    {{ $resource := resources.Get (printf "img/%s" $media) }}
+    {{ if $resource }}
+      <div class="hero-media-bg">
+        <div class="hero-media-sheen"></div>
+        {{ if eq $resource.MediaType.MainType "image" }}
+          {{ $img := $resource.Fill "1600x900 center" }}
+          <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "EV charging scene" }}">
+        {{ else if eq $resource.MediaType.MainType "video" }}
+          <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "EV charging video" }}">
+            <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
+          </video>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+  <div class="container">
+    <div class="hero-card">
+      {{ with .Get "eyebrow" }}<p class="hero-eyebrow">{{ . }}</p>{{ end }}
+      {{ with .Get "title" }}<h1 class="hero-title">{{ . }}</h1>{{ end }}
+      {{ with .Get "subtitle" }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+      <div class="hero-actions">
+        {{ with .Get "primary_label" }}
+          <a class="btn btn-primary" href="{{ $.Get "primary_url" | default "#contact" }}">{{ . }}</a>
+        {{ end }}
+        {{ with .Get "secondary_label" }}
+          <a class="btn btn-ghost" href="{{ $.Get "secondary_url" | default "#services" }}">{{ . }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,114 @@
++++
+title = "Boosst EV Charging"
+description = "Boosst delivers EV Charging-as-a-Service for multifamily properties."
++++
+
+{{< hero
+  eyebrow="EV charging for multifamily"
+  title="Charging at home should be as simple as charging your phone."
+  subtitle="Boosst delivers EV Charging-as-a-Service so multifamily residents can plug in overnight while we fund, install, and operate the entire experience."
+  primary_label="Book a site walk"
+  primary_url="/contact"
+  secondary_label="Download overview"
+  secondary_url="/boost-overview.pdf"
+  media="car.mp4"
+  media_alt="Boosst chargers in action"
+>}}
+
+{{< section-intro id="about" label="About Boosst" heading="Overnight charging, zero hassle." body="Nearly 95% of multifamily buildings still lack dependable charging. Boosst changes that with a turnkey model that keeps residents happy, improves retention, and increases property value&mdash;without risk or expense to ownership." >}}
+
+{{< problem-grid heading="Why properties switch to Boosst" intro="We solve the hidden friction that keeps chargers from being deployed at scale." >}}
+  {{< problem-card icon="&#9888;" title="Unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
+  {{< problem-card icon="&#128184;" title="Costly electrical upgrades" body="Dynamic Load Management (DLM) squeezes more power from existing infrastructure, avoiding heavy CAPEX." >}}
+  {{< problem-card icon="&#128736;" title="No staff bandwidth" body="Boosst handles feasibility, permitting, installation, billing, support, and maintenance." >}}
+  {{< problem-card icon="&#128663;" title="Residents fighting for plugs" body="Every driver gets a dedicated overnight charger instead of battling queues." >}}
+{{< /problem-grid >}}
+
+{{< benefits
+  id="services"
+  label="For Property Owners & Managers"
+  heading="EV Charging-as-a-Service that just works"
+  body="Boosst funds the install, manages the energy, and supports your residents so you can market a premium amenity from day one."
+  media="car2.mp4"
+  media_alt="Boosst hardware recap video"
+  mode="background"
+>}}
+  {{< benefit-item title="Zero upfront or ongoing cost" open="true" >}}
+  We finance site feasibility, permitting, installation, and hardware so CAPEX and OPEX stay at zero.
+  {{< /benefit-item >}}
+  {{< benefit-item title="Smart energy management" >}}
+  Dynamic Load Management technology balances chargers across 10&ndash;40A to avoid panel upgrades.
+  {{< /benefit-item >}}
+  {{< benefit-item title="Expandable + future-proof" >}}
+  Modular infrastructure grows alongside demand so every stall can be electrified over time.
+  {{< /benefit-item >}}
+  {{< benefit-item title="Increased NOI" >}}
+  Attract and retain high-value tenants with a differentiated amenity backed by predictable revenue share.
+  {{< /benefit-item >}}
+{{< /benefits >}}
+
+{{< simplicity
+  id="residents"
+  label="For Residents"
+  heading="Dedicated, reliable charging for every driver"
+  body="Residents plug in overnight at home with fast, reliable chargers plus a connected app for total control."
+  media="7645d73e-ca81-4b15-97f0-2c5738c3b7e6.JPG"
+  media_alt="Resident plugging in an EV"
+>}}
+  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list&mdash;Boosst assigns a personal stall with guaranteed overnight access.{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Fast, failsafe charging" >}}10&ndash;40A charging speeds with Wi-Fi + Bluetooth connectivity so sessions complete even if networks drop.{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Boosst app & dashboard" >}}Track usage, manage billing, and request 24/7 support directly from the app backed by our North America team.{{< /simplicity-feature >}}
+{{< /simplicity >}}
+
+{{< location-map
+  id="deployments"
+  label="Deployments"
+  heading="Live across Seattle and Texas flagship communities"
+  body="Tap between Seattle and Texas to see a few of the buildings already powered by Boosst."
+  zoom="6"
+>}}
+[
+  {
+    "key": "seattle",
+    "label": "Seattle",
+    "locations": [
+      { "label": "Lake Union Landing", "lat": 47.6231, "lng": -122.3364 },
+      { "label": "Rainier Ridge Towers", "lat": 47.5793, "lng": -122.2876 },
+      { "label": "Ballard Yard Lofts", "lat": 47.6686, "lng": -122.3849 }
+    ]
+  },
+  {
+    "key": "texas",
+    "label": "Texas",
+    "locations": [
+      { "label": "East Austin Flats", "lat": 30.2620, "lng": -97.7136 },
+      { "label": "Design District Residences", "lat": 32.8007, "lng": -96.8282 },
+      { "label": "Medical Center Commons", "lat": 29.7046, "lng": -95.4018 }
+    ]
+  }
+]
+{{< /location-map >}}
+
+{{< ecosystem
+  heading="A complete EV ecosystem, delivered"
+  body="Boosst designs parking layouts, chargers, scooters, and micromobility bays to give every resident a clean energy lane."
+  media="182f9927-b152-453f-9132-a38b06e17e96.JPG"
+  alt="EV chargers aligned in a parking structure"
+>}}
+
+{{< faq heading="Questions we hear from property teams" intro="Our turnkey model keeps owners, managers, and residents aligned from day one." >}}
+  {{< faq-item question="What do you mean by Charging-as-a-Service?" >}}
+  Boosst funds installation, owns the hardware, and operates support so you can offer charging without touching CAPEX, OPEX, billing, or maintenance.
+  {{< /faq-item >}}
+  {{< faq-item question="How is energy managed?" >}}
+  Our Dynamic Load Management platform orchestrates every charger to stay within your panel limits, removing the need for costly utility upgrades.
+  {{< /faq-item >}}
+  {{< faq-item question="What do residents experience?" >}}
+  Each resident receives a dedicated charger with 10&ndash;40A speeds, seamless connectivity, and a Boosst mobile app to track charging and payments.
+  {{< /faq-item >}}
+  {{< faq-item question="Who handles support after installation?" >}}
+  Boosst manages 24/7 support, proactive maintenance, and field service dispatch so your team never has to troubleshoot a station.
+  {{< /faq-item >}}
+{{< /faq >}}
+
+{{< section-intro id="cta" body="Boosst handles everything&mdash;so property owners, management teams, and their residents don't have to." >}}

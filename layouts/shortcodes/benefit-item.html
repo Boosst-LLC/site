@@ -1,0 +1,7 @@
+<div class="benefit-item {{ if eq (.Get "open") "true" }}is-open{{ end }}">
+  <div class="benefit-header">
+    <span>{{ .Get "title" }}</span>
+    <span class="benefit-toggle">+</span>
+  </div>
+  {{ with .Inner }}<div class="benefit-body">{{ . | markdownify }}</div>{{ end }}
+</div>

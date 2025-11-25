@@ -1,0 +1,4 @@
+<article class="faq-item">
+  {{ with .Get "question" }}<h3>{{ . }}</h3>{{ end }}
+  {{ with .Inner }}<p>{{ . | markdownify }}</p>{{ end }}
+</article>
