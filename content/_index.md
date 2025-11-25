@@ -15,7 +15,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   media_alt="Boosst chargers in action"
 >}}
 
-{{< section-intro id="about" label="About Boosst" heading="Overnight charging, zero hassle." body="Nearly 95% of multifamily buildings still lack dependable charging. Boosst changes that with a turnkey model that keeps residents happy, improves retention, and increases property value&mdash;without risk or expense to ownership." >}}
+{{< section-intro id="about" label="About Boosst" heading="Overnight charging, zero hassle." body="Nearly 95% of multifamily buildings still lack dependable charging. Boosst changes that with a turnkey model that keeps residents happy, improves retention, and increases property value--without risk or expense to ownership." >}}
 
 {{< problem-grid heading="Why properties switch to Boosst" intro="We solve the hidden friction that keeps chargers from being deployed at scale." >}}
   {{< problem-card icon="&#9888;" title="Unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
@@ -55,7 +55,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   media="7645d73e-ca81-4b15-97f0-2c5738c3b7e6.JPG"
   media_alt="Resident plugging in an EV"
 >}}
-  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list&mdash;Boosst assigns a personal stall with guaranteed overnight access.{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list--Boosst assigns a personal stall with guaranteed overnight access.{{< /simplicity-feature >}}
   {{< simplicity-feature title="Fast, failsafe charging" >}}10&ndash;40A charging speeds with Wi-Fi + Bluetooth connectivity so sessions complete even if networks drop.{{< /simplicity-feature >}}
   {{< simplicity-feature title="Boosst app & dashboard" >}}Track usage, manage billing, and request 24/7 support directly from the app backed by our North America team.{{< /simplicity-feature >}}
 {{< /simplicity >}}
@@ -63,27 +63,18 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< location-map
   id="deployments"
   label="Deployments"
-  heading="Live across Seattle and Texas flagship communities"
-  body="Tap between Seattle and Texas to see a few of the buildings already powered by Boosst."
-  zoom="6"
+  heading="Live across Seattle's flagship communities"
+  body="Real sites across the Pacific Northwest already rely on Boosst for dependable resident charging."
+  zoom="8"
 >}}
 [
   {
-    "key": "seattle",
-    "label": "Seattle",
+    "key": "pnw",
+    "label": "Seattle Metro",
     "locations": [
-      { "label": "Lake Union Landing", "lat": 47.6231, "lng": -122.3364 },
-      { "label": "Rainier Ridge Towers", "lat": 47.5793, "lng": -122.2876 },
-      { "label": "Ballard Yard Lofts", "lat": 47.6686, "lng": -122.3849 }
-    ]
-  },
-  {
-    "key": "texas",
-    "label": "Texas",
-    "locations": [
-      { "label": "East Austin Flats", "lat": 30.2620, "lng": -97.7136 },
-      { "label": "Design District Residences", "lat": 32.8007, "lng": -96.8282 },
-      { "label": "Medical Center Commons", "lat": 29.7046, "lng": -95.4018 }
+      { "label": "Saxe Apartments — 2402 NE 65th St #100, Seattle, WA 98115", "lat": 47.676027276040166, "lng": -122.30144844603447 },
+      { "label": "Stazione25 — 2715 25th Ave S, Seattle, WA 98144", "lat": 47.578826573487426, "lng": -122.30071593068966 },
+      { "label": "Aria Apartments — 636 W 6th St, Vancouver, WA 98660", "lat": 45.62631402906352, "lng": -122.67742313068968 }
     ]
   }
 ]
@@ -92,8 +83,8 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< ecosystem
   heading="A complete EV ecosystem, delivered"
   body="Boosst designs parking layouts, chargers, scooters, and micromobility bays to give every resident a clean energy lane."
-  media="182f9927-b152-453f-9132-a38b06e17e96.JPG"
-  alt="EV chargers aligned in a parking structure"
+  media="32ace619-9997-45ab-8724-0406ea365c84.JPG"
+  alt="EV chargers staged for property residents"
 >}}
 
 {{< faq heading="Questions we hear from property teams" intro="Our turnkey model keeps owners, managers, and residents aligned from day one." >}}
@@ -111,4 +102,4 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   {{< /faq-item >}}
 {{< /faq >}}
 
-{{< section-intro id="cta" body="Boosst handles everything&mdash;so property owners, management teams, and their residents don't have to." >}}
+{{< section-intro id="cta" body="Boosst handles everything--so property owners, management teams, and their residents don't have to." >}}

@@ -17,16 +17,20 @@
     {{ end }}
   {{ end }}
   <div class="container">
+    {{ $primaryURL := .Get "primary_url" | default "#contact" }}
+    {{ $secondaryURL := .Get "secondary_url" | default "#services" }}
+    {{ $primaryHref := cond (hasPrefix $primaryURL "/") ($primaryURL | relURL) $primaryURL }}
+    {{ $secondaryHref := cond (hasPrefix $secondaryURL "/") ($secondaryURL | relURL) $secondaryURL }}
     <div class="hero-card">
       {{ with .Get "eyebrow" }}<p class="hero-eyebrow">{{ . }}</p>{{ end }}
       {{ with .Get "title" }}<h1 class="hero-title">{{ . }}</h1>{{ end }}
       {{ with .Get "subtitle" }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
       <div class="hero-actions">
         {{ with .Get "primary_label" }}
-          <a class="btn btn-primary" href="{{ $.Get "primary_url" | default "#contact" }}">{{ . }}</a>
+          <a class="btn btn-primary" href="{{ $primaryHref }}">{{ . }}</a>
         {{ end }}
         {{ with .Get "secondary_label" }}
-          <a class="btn btn-ghost" href="{{ $.Get "secondary_url" | default "#services" }}">{{ . }}</a>
+          <a class="btn btn-ghost" href="{{ $secondaryHref }}">{{ . }}</a>
         {{ end }}
       </div>
     </div>

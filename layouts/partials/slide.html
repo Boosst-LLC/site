@@ -2,7 +2,13 @@
     <div class="swiper-wrapper">
         {{ range .Site.Data.slide }}
         <div class="swiper-slide">
-            <img src="{{ .image }}" alt="{{ .alt }}">
+            {{ $img := resources.Get .image }}
+            {{ if $img }}
+                {{ $processed := $img.Fill "1600x900 center" }}
+                <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ or .alt .title }}" loading="lazy">
+            {{ else }}
+                <img src="{{ .image | relURL }}" alt="{{ or .alt .title }}" loading="lazy">
+            {{ end }}
             <div class="s-fade-txt">
                 <h1 class="text-4xl {{ or .color "text-white" }}">{{ .title }}</h1>
             </div>

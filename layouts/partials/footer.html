@@ -1,7 +1,13 @@
 <footer class="site-footer" id="contact">
   <div class="container footer-grid">
     <div>
-      <div class="footer-logo">Boosst</div>
+      <div class="footer-logo">
+        {{ with resources.Get "img/logo-mark.svg" }}
+          <img src="{{ .RelPermalink }}" alt="Boosst logo" decoding="async">
+        {{ else }}
+          Boosst
+        {{ end }}
+      </div>
       <p>EV Charging-as-a-Service for multifamily communities across North America.</p>
     </div>
     <div class="footer-nav">
@@ -12,7 +18,7 @@
     </div>
     <div class="footer-nav">
       <strong>Company</strong>
-      <a href="/contact">Contact</a>
+      <a href="{{ "/contact/" | relURL }}">Contact</a>
       <a href="mailto:hello@tryboost.com">hello@tryboost.com</a>
       <a href="tel:+18005551234">+1 (800) 555-1234</a>
     </div>

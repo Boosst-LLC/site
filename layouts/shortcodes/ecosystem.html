@@ -12,8 +12,8 @@
         {{ if $media }}
           {{ $resource := resources.Get (printf "img/%s" $media) }}
           {{ if and $resource (eq $resource.MediaType.MainType "image") }}
-            {{ $img := $resource.Resize "1200x" }}
-            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "alt" | default "Boosst ecosystem" }}" loading="lazy">
+            {{ $large := $resource.Fill "1600x1000 center" }}
+            <img src="{{ $large.RelPermalink }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .Get "alt" | default "Boosst ecosystem" }}" loading="lazy">
           {{ end }}
         {{ end }}
       </div>
