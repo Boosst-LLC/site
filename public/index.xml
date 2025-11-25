@@ -2,10 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boosst EV Charging on Boosst</title>
-    <link>https://example.org/</link>
+    <link>https://boosst.com/</link>
     <description>Recent content in Boosst EV Charging on Boosst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jun 2020 12:33:45 +1000</lastBuildDate>
+    <atom:link href="https://boosst.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Private EV Charging for Multifamily Housing</title>
+      <link>https://boosst.com/services/service1/</link>
+      <pubDate>Tue, 23 Jun 2020 12:33:45 +1000</pubDate>
+      <guid>https://boosst.com/services/service1/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel. Suspendisse eu ipsum consequat, sodales nulla vel, faucibus velit. Fusce imperdiet lacus nec cursus auctor. In vulputate arcu et nulla placerat, nec pulvinar quam rhoncus. Praesent vel placerat nunc. Mauris elit felis, pulvinar egestas risus ut, fermentum ullamcorper orci. Integer tempor, neque sed fermentum eleifend, ligula est tincidunt purus, sodales semper elit enim ut mi. Vestibulum commodo tristique hendrerit. Duis interdum tristique augue id aliquam. Sed et tellus aliquam, accumsan erat at, facilisis tortor. Donec ac sapien sed lectus ullamcorper ultrices. Nullam placerat mauris nec urna rhoncus, vitae faucibus nulla venenatis. Donec vestibulum justo auctor, vestibulum diam quis, egestas erat. Vivamus volutpat et metus ut fermentum. Donec volutpat neque nec quam lacinia, nec faucibus felis ullamcorper.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://boosst.com/blog/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/blog/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rich Content</title>
+      <link>https://boosst.com/blog/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/blog/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://boosst.com/blog/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/blog/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://boosst.com/blog/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/blog/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji Support</title>
+      <link>https://boosst.com/blog/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/blog/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Boosst</title>
+      <link>https://boosst.com/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/about/</guid>
+      <description>&lt;p&gt;At Boosst, we believe charging your EV should be as easy as charging your phone. At home and overnight.&lt;/p&gt;&#xA;&lt;p&gt;The reality? Nearly 95% of multifamily buildings don’t offer charging—or they provide slow, shared, unreliable stations that frustrate residents and burden property owners.&lt;/p&gt;&#xA;&lt;p&gt;We’re changing that.&lt;/p&gt;&#xA;&lt;p&gt;Boosst delivers EV Charging-as-a-Service (CaaS) for multifamily properties. That means:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Zero upfront cost&lt;/strong&gt; – we fund the installation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Zero ongoing management&lt;/strong&gt; – we handle billing, support, and maintenance.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dedicated personal chargers&lt;/strong&gt; – residents plug in overnight at home, instead of fighting over public stations.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Our turnkey approach keeps residents happy, improves retention, and increases property value—all without risk or expense to ownership.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Affordable EV Charging</title>
+      <link>https://boosst.com/affordable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/affordable/</guid>
+      <description>&lt;h2 id=&#34;avoid-the-costly-inconvenience-of-public-charging&#34;&gt;&lt;strong&gt;Avoid the Costly Inconvenience of Public Charging.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Tired of paying for more than just charging?&lt;/p&gt;&#xA;&lt;p&gt;Avoid high, hidden public charging fees (parking, scheduling, and idle fees).&lt;/p&gt;&#xA;&lt;p&gt;Save time, skip the fees, and ditch the hassle.&lt;/p&gt;&#xA;&lt;p&gt;With your own charger, EV charging at home becomes effortless and affordable.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;text-center my-8 flex items-center justify-center gap-3 flex-wrap&#34;&gt;&#xA;  &lt;a href=&#39;https://boosst.com/dedicated/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Dedicated&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/convenient/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Convenient&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/affordable/&#39;&#xA;     class=&#39;px-3 py-1 rounded font-semibold text-blue-600 underline&#39;&gt;&#xA;    Affordable&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Convenient EV Charging</title>
+      <link>https://boosst.com/convenient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/convenient/</guid>
+      <description>&lt;h2 id=&#34;charge-at-home-in-your-own-spot-on-your-schedule&#34;&gt;&lt;strong&gt;Charge at Home. In Your Own Spot. On Your Schedule.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Save time, skip the fees, and ditch the hassle.&lt;/p&gt;&#xA;&lt;p&gt;With your own charger, EV charging becomes effortless.&lt;/p&gt;&#xA;&lt;p&gt;Just park and go!  Stress-free overnight charging! Stop wasting time at public chargers.&lt;/p&gt;&#xA;&lt;p&gt;With your own Boosst charger, plug in and go—charging for your EV has never been easier!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;text-center my-8 flex items-center justify-center gap-3 flex-wrap&#34;&gt;&#xA;  &lt;a href=&#39;https://boosst.com/dedicated/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Dedicated&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/convenient/&#39;&#xA;     class=&#39;px-3 py-1 rounded font-semibold text-blue-600 underline&#39;&gt;&#xA;    Convenient&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/affordable/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Affordable&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Dedicated EV Charging</title>
+      <link>https://boosst.com/dedicated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://boosst.com/dedicated/</guid>
+      <description>&lt;h2 id=&#34;your-own-dedicated-personal-ev-charger&#34;&gt;&lt;strong&gt;Your Own, Dedicated Personal EV Charger.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Enjoy hassle-free charging.&lt;/p&gt;&#xA;&lt;p&gt;Your spot. Your Charger!&lt;/p&gt;&#xA;&lt;p&gt;Simply come home, park, and plug in.&lt;/p&gt;&#xA;&lt;p&gt;Charge your car like you charge your smartphone, overnight and at home!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;text-center my-8 flex items-center justify-center gap-3 flex-wrap&#34;&gt;&#xA;  &lt;a href=&#39;https://boosst.com/dedicated/&#39;&#xA;     class=&#39;px-3 py-1 rounded font-semibold text-blue-600 underline&#39;&gt;&#xA;    Dedicated&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/convenient/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Convenient&#xA;  &lt;/a&gt;&#xA;  &lt;span class=&#34;opacity-30&#34;&gt;·&lt;/span&gt;&#xA;  &lt;a href=&#39;https://boosst.com/affordable/&#39;&#xA;     class=&#39;px-3 py-1 rounded text-gray-600 hover:text-blue-600&#39;&gt;&#xA;    Affordable&#xA;  &lt;/a&gt;&#xA;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>
