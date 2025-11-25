@@ -1,0 +1,11 @@
+<section class="section-problems" id="solutions">
+  <div class="container">
+    <div class="section-heading">
+      {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .Get "intro" }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <div class="problem-grid">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>
