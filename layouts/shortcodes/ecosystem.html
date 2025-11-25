@@ -12,8 +12,12 @@
         {{ if $media }}
           {{ $resource := resources.Get (printf "img/%s" $media) }}
           {{ if and $resource (eq $resource.MediaType.MainType "image") }}
-            {{ $large := $resource.Fill "1600x1000 center" }}
-            <img src="{{ $large.RelPermalink }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .Get "alt" | default "Boosst ecosystem" }}" loading="lazy">
+            {{ $desktop := $resource.Fill "1600x1000 center" }}
+            {{ $mobile := $resource.Fill "900x900 center" }}
+            <picture>
+              <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+              <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "alt" | default "Boosst ecosystem" }}" loading="lazy">
+            </picture>
           {{ end }}
         {{ end }}
       </div>

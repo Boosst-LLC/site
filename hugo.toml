@@ -1,6 +1,8 @@
 baseURL = 'https://boosst.com/'
 languageCode = 'en-us'
 title = 'Boosst'
+relativeURLs = true
+canonifyURLs = false
 
 [params]
 gtag = 'G-XXXXXXX'

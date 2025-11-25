@@ -5,10 +5,10 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 
 {{< hero
   eyebrow="EV charging for multifamily"
-  title="Charging at home should be as simple as charging your phone."
-  subtitle="Boosst delivers EV Charging-as-a-Service so multifamily residents can plug in overnight while we fund, install, and operate the entire experience."
+  title="Charging at your apartment should be as simple as charging your phone."
+  subtitle="Boosst delivers EV Charging-as-a-Service so multifamily residents can plug in overnight while we fund, install, and operate the entire experience. Charging at your apartment should be as simple as charging your phone."
   primary_label="Book a site walk"
-  primary_url="/contact"
+  primary_url="/contact/"
   secondary_label="Download overview"
   secondary_url="/boost-overview.pdf"
   media="car.mp4"

@@ -6,8 +6,12 @@
         {{ $resource := resources.Get (printf "img/%s" $media) }}
         {{ if $resource }}
           {{ if eq $resource.MediaType.MainType "image" }}
-            {{ $img := $resource.Fill "1100x900 center" }}
-            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst simplicity" }}" loading="lazy">
+            {{ $desktop := $resource.Fill "1400x1100 center" }}
+            {{ $mobile := $resource.Fill "900x900 center" }}
+            <picture>
+              <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+              <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst simplicity" }}" loading="lazy">
+            </picture>
           {{ else if eq $resource.MediaType.MainType "video" }}
             <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst simplicity" }}">
               <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">

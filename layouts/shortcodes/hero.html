@@ -6,8 +6,12 @@
       <div class="hero-media-bg">
         <div class="hero-media-sheen"></div>
         {{ if eq $resource.MediaType.MainType "image" }}
-          {{ $img := $resource.Fill "1600x900 center" }}
-          <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "EV charging scene" }}">
+          {{ $desktop := $resource.Fill "1600x900 center" }}
+          {{ $mobile := $resource.Fill "900x1100 center" }}
+          <picture>
+            <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+            <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "EV charging scene" }}">
+          </picture>
         {{ else if eq $resource.MediaType.MainType "video" }}
           <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "EV charging video" }}">
             <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">

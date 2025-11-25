@@ -8,8 +8,12 @@
         <div class="benefits-bg">
           <div class="benefits-bg-overlay"></div>
           {{ if eq $resource.MediaType.MainType "image" }}
-            {{ $img := $resource.Fill "1600x900 center" }}
-            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}">
+            {{ $desktop := $resource.Fill "1600x1100 center" }}
+            {{ $mobile := $resource.Fill "900x900 center" }}
+            <picture>
+              <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+              <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}">
+            </picture>
           {{ else if eq $resource.MediaType.MainType "video" }}
             <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst services" }}">
               <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
@@ -45,8 +49,12 @@
           {{ $resource := resources.Get (printf "img/%s" $media) }}
           {{ if $resource }}
             {{ if eq $resource.MediaType.MainType "image" }}
-              {{ $img := $resource.Fill "1200x900 center" }}
-              <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}" loading="lazy">
+              {{ $desktop := $resource.Fill "1400x1000 center" }}
+              {{ $mobile := $resource.Fill "900x700 center" }}
+              <picture>
+                <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+                <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}" loading="lazy">
+              </picture>
             {{ else if eq $resource.MediaType.MainType "video" }}
               <video autoplay muted loop playsinline controlslist="nodownload" aria-label="{{ .Get "media_alt" | default "Boosst video" }}">
                 <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
