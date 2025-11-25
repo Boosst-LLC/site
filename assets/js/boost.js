@@ -81,6 +81,28 @@
       }
       activateRegion(defaultKey);
     });
+
+    const header = document.querySelector('.site-header');
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      if (!header) return;
+      const current = window.scrollY;
+      if (current > lastScrollY + 5 && current > 80) {
+        header.classList.add('is-hidden');
+        header.classList.remove('is-visible');
+      } else if (current < lastScrollY - 5) {
+        header.classList.remove('is-hidden');
+        header.classList.add('is-visible');
+      }
+      lastScrollY = current;
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    const heroVideo = document.querySelector('.hero .hero-media-bg video');
+    if (heroVideo) {
+      heroVideo.playbackRate = 0.5;
+    }
   };
 
   if (document.readyState === 'loading') {
