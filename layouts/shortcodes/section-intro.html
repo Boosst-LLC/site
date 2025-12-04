@@ -3,7 +3,8 @@
     <div class="section-heading">
       {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
       {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
-      {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+      {{ with .Get "body" }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+      {{ with .Get "subbody" }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
     </div>
   </div>
 </section>

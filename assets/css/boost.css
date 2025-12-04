@@ -614,6 +614,8 @@ section {
 
 .section-map {
   background: var(--boost-bg);
+  position: relative;
+  z-index: 1;
 }
 
 .map-shell {
@@ -624,6 +626,8 @@ section {
   border-radius: 18px;
   padding: 2rem;
   box-shadow: 0 25px 55px rgba(15, 23, 42, 0.09);
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 900px) {
