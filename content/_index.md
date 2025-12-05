@@ -48,7 +48,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< simplicity
   id="residents"
   label="For Residents"
-  heading="Convenient, reliable chargin just for you!"
+  heading="Convenient, reliable charging just for you!"
   body="Residents plug in overnight at home to their fast, reliable chargers plus a connected app for total control."
   media="7645d73e-ca81-4b15-97f0-2c5738c3b7e6.JPG"
   media_alt="Resident plugging in an EV"
