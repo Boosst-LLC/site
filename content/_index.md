@@ -79,8 +79,8 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< /location-map >}}
 
 {{< ecosystem
-  heading="A complete EV ecosystem, delivered"
-  body="Boosst designs parking layouts, chargers, scooters, and micromobility bays to give every resident a clean energy lane."
+  heading="A complete EV charging ecosystem, delivered"
+  body="Boosst provides overnight access, easy-to-use mobile apps and seamless charging across all EV brands."
   media="32ace619-9997-45ab-8724-0406ea365c84.JPG"
   alt="EV chargers staged for property residents"
 >}}
