@@ -1,24 +1,86 @@
 <section class="section-simplicity" id="{{ .Get "id" | default "residents" }}">
   <div class="container">
+    {{- $mediaAlt := .Get "media_alt" | default "Boosst simplicity" -}}
+    {{- $slides := slice -}}
+    {{- with .Get "media" -}}
+      {{- with resources.Get (printf "img/%s" .) -}}
+        {{- $slides = $slides | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- with .Get "media_gallery" -}}
+      {{- range $path := split . "," -}}
+        {{- $trimmed := trim $path " " -}}
+        {{- if $trimmed -}}
+          {{- with resources.Get (printf "img/%s" $trimmed) -}}
+            {{- $slides = $slides | append . -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $imageSlides := where $slides "MediaType.MainType" "image" -}}
+    {{- $videoSlides := where $slides "MediaType.MainType" "video" -}}
+    {{- $carouselId := "" -}}
+    {{- if gt (len $imageSlides) 1 -}}
+      {{- $counter := add 1 (default 0 (.Page.Scratch.Get "simplicity-carousel-counter")) -}}
+      {{- .Page.Scratch.Set "simplicity-carousel-counter" $counter -}}
+      {{- $carouselId = printf "simplicity-carousel-%d" $counter -}}
+    {{- end -}}
+
     <div class="simplicity-media">
-      {{ $media := .Get "media" }}
-      {{ if $media }}
-        {{ $resource := resources.Get (printf "img/%s" $media) }}
-        {{ if $resource }}
-          {{ if eq $resource.MediaType.MainType "image" }}
-            {{ $desktop := $resource.Fill "1400x1100 center" }}
-            {{ $mobile := $resource.Fill "900x900 center" }}
-            <picture>
-              <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
-              <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst simplicity" }}" loading="lazy">
-            </picture>
-          {{ else if eq $resource.MediaType.MainType "video" }}
-            <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst simplicity" }}">
-              <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
-            </video>
-          {{ end }}
-        {{ end }}
-      {{ end }}
+      {{- if $carouselId -}}
+        <div id="{{ $carouselId }}" class="simplicity-carousel" data-resident-carousel>
+          <div class="simplicity-carousel__track">
+            {{- range $index, $img := $imageSlides -}}
+              {{- $desktop := $img -}}
+              {{- $mobile := $img -}}
+              {{- if and (ge $img.Width 1400) (ge $img.Height 1100) -}}
+                {{- $desktop = $img.Fill "1400x1100 center" -}}
+              {{- end -}}
+              {{- if and (ge $img.Width 900) (ge $img.Height 900) -}}
+                {{- $mobile = $img.Fill "900x900 center" -}}
+              {{- end -}}
+              <div class="simplicity-carousel__slide{{ if eq $index 0 }} is-active{{ end }}">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+                  <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ $mediaAlt }}" loading="lazy">
+                </picture>
+              </div>
+            {{- end -}}
+          </div>
+          <div class="simplicity-carousel__controls">
+            <button type="button" class="carousel-btn" aria-label="Previous slide" data-carousel-prev>
+              <span aria-hidden="true">&larr;</span>
+            </button>
+            <button type="button" class="carousel-btn" aria-label="Next slide" data-carousel-next>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+          <div class="simplicity-carousel__dots">
+            {{- range $index, $_ := $imageSlides -}}
+              <button type="button" class="carousel-dot{{ if eq $index 0 }} is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="Go to slide {{ add $index 1 }}"></button>
+            {{- end -}}
+          </div>
+        </div>
+      {{- else if eq (len $imageSlides) 1 -}}
+        {{- $img := index $imageSlides 0 -}}
+        {{- $desktop := $img -}}
+        {{- $mobile := $img -}}
+        {{- if and (ge $img.Width 1400) (ge $img.Height 1100) -}}
+          {{- $desktop = $img.Fill "1400x1100 center" -}}
+        {{- end -}}
+        {{- if and (ge $img.Width 900) (ge $img.Height 900) -}}
+          {{- $mobile = $img.Fill "900x900 center" -}}
+        {{- end -}}
+        <picture>
+          <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+          <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ $mediaAlt }}" loading="lazy">
+        </picture>
+      {{- else if eq (len $videoSlides) 1 -}}
+        {{- $video := index $videoSlides 0 -}}
+        <video autoplay muted loop playsinline aria-label="{{ $mediaAlt }}">
+          <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType.String }}">
+        </video>
+      {{- end -}}
     </div>
     <div class="simplicity-copy">
       {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
@@ -29,4 +91,78 @@
       </div>
     </div>
   </div>
+  {{- if $carouselId -}}
+    <script>
+      (function () {
+        var carousel = document.getElementById('{{ $carouselId }}');
+        if (!carousel) {
+          return;
+        }
+        var slides = carousel.querySelectorAll('.simplicity-carousel__slide');
+        if (!slides.length) {
+          return;
+        }
+        var dots = carousel.querySelectorAll('[data-carousel-dot]');
+        var prev = carousel.querySelector('[data-carousel-prev]');
+        var next = carousel.querySelector('[data-carousel-next]');
+        var index = 0;
+        var timer = null;
+
+        function setActive(target) {
+          index = (target + slides.length) % slides.length;
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.toggle('is-active', i === index);
+          }
+          for (var j = 0; j < dots.length; j++) {
+            dots[j].classList.toggle('is-active', j === index);
+          }
+        }
+
+        function goTo(delta) {
+          setActive(index + delta);
+        }
+
+        function startTimer() {
+          stopTimer();
+          timer = setInterval(function () {
+            goTo(1);
+          }, 6000);
+        }
+
+        function stopTimer() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        if (prev) {
+          prev.addEventListener('click', function () {
+            goTo(-1);
+            startTimer();
+          });
+        }
+        if (next) {
+          next.addEventListener('click', function () {
+            goTo(1);
+            startTimer();
+          });
+        }
+        for (var k = 0; k < dots.length; k++) {
+          (function (dotIndex) {
+            dots[dotIndex].addEventListener('click', function () {
+              setActive(dotIndex);
+              startTimer();
+            });
+          })(k);
+        }
+
+        carousel.addEventListener('mouseenter', stopTimer);
+        carousel.addEventListener('mouseleave', startTimer);
+
+        setActive(0);
+        startTimer();
+      })();
+    </script>
+  {{- end -}}
 </section>

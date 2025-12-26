@@ -1,10 +1,41 @@
-<section class="section-problems" id="{{ .Get "id" | default "intro" }}" style="padding-block:4rem;">
+{{- $label := .Get "label" -}}
+{{- $heading := .Get "heading" -}}
+{{- $body := .Get "body" -}}
+{{- $subbody := .Get "subbody" -}}
+{{- $image := .Get "image" -}}
+{{- $imageAlt := .Get "image_alt" -}}
+{{- $imageSrc := "" -}}
+{{- with $image }}
+  {{- with resources.GetMatch . }}
+    {{- $imageSrc = .RelPermalink -}}
+  {{- else }}
+    {{- $imageSrc = (. | relURL) -}}
+  {{- end }}
+{{- end }}
+
+<section class="section-problems section-intro" id="{{ .Get "id" | default "intro" }}" style="padding-block:4rem;">
   <div class="container">
-    <div class="section-heading">
-      {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
-      {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
-      {{ with .Get "body" }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
-      {{ with .Get "subbody" }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+    {{ if $imageSrc }}
+    <div class="section-intro__grid">
+      <div class="section-heading">
+        {{ with $label }}<span class="section-label">{{ . }}</span>{{ end }}
+        {{ with $heading }}<h2>{{ . }}</h2>{{ end }}
+        {{ with $body }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+        {{ with $subbody }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+      </div>
+      <div class="section-intro__media">
+        <div class="section-intro__media-frame">
+          <img src="{{ $imageSrc }}" alt="{{ $imageAlt | default "" }}">
+        </div>
+      </div>
     </div>
+    {{ else }}
+    <div class="section-heading">
+      {{ with $label }}<span class="section-label">{{ . }}</span>{{ end }}
+      {{ with $heading }}<h2>{{ . }}</h2>{{ end }}
+      {{ with $body }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+      {{ with $subbody }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>

@@ -273,6 +273,47 @@ section {
   height: 100%;
   object-fit: cover;
 }
+.section-intro__grid {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+@media (min-width: 1024px) {
+  .section-intro__grid {
+    grid-template-columns: 0.58fr 0.42fr;
+    align-items: stretch;
+  }
+}
+
+.section-intro__media {
+  align-self: stretch;
+  display: flex;
+}
+
+.section-intro__media-frame {
+  flex: 1;
+  border-radius: var(--boost-radius);
+  overflow: hidden;
+  background: var(--boost-surface);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  height: 100%;
+  min-height: clamp(220px, 35vw, 320px);
+}
+
+@media (min-width: 1024px) {
+  .section-intro__media-frame {
+    min-height: 100%;
+  }
+}
+
+.section-intro__media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+  display: block;
+}
+
 .section-heading {
   display: flex;
   flex-direction: column;
@@ -507,6 +548,95 @@ section {
   padding: 1rem;
   background: var(--boost-accent-soft);
   border-radius: var(--boost-radius);
+}
+
+.simplicity-carousel {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--boost-border-subtle);
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.15);
+  background: var(--boost-surface);
+}
+
+.simplicity-carousel__track {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.simplicity-carousel__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.simplicity-carousel__slide picture,
+.simplicity-carousel__slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.simplicity-carousel__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  position: absolute;
+}
+
+.simplicity-carousel__controls {
+  position: absolute;
+  inset-block-end: 1.25rem;
+  inset-inline: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(15, 23, 42, 0.7);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.simplicity-carousel__dots {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.carousel-dot.is-active {
+  background: #fff;
 }
 
 .section-ecosystem {
