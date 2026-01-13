@@ -24,10 +24,10 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 >}}
 
 {{< problem-grid heading="Why properties switch to Boosst" intro="We solve the hidden friction that keeps chargers from being deployed at scale." >}}
-  {{< problem-card icon="&#9888;" title="Unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
-  {{< problem-card icon="&#128184;" title="Costly electrical upgrades" body="Dynamic Load Management (DLM) squeezes more power from existing infrastructure, avoiding heavy CAPEX." >}}
+  {{< problem-card icon="&#9888;" title="No unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
+  {{< problem-card icon="&#128184;" title="No costly electrical upgrades" body="Dynamic Load Management (DLM) squeezes more power from existing infrastructure, avoiding heavy CAPEX." >}}
   {{< problem-card icon="&#128736;" title="No staff bandwidth" body="Boosst handles feasibility, permitting, installation, billing, support, and maintenance." >}}
-  {{< problem-card icon="&#128663;" title="Residents fighting for plugs" body="Every driver gets a dedicated overnight charger instead of battling queues." >}}
+  {{< problem-card icon="&#128663;" title="No residents fighting for plugs" body="Every driver gets a dedicated overnight charger instead of battling queues." >}}
 {{< /problem-grid >}}
 
 {{< benefits
