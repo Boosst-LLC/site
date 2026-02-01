@@ -1069,9 +1069,11 @@ section {
   padding-bottom: 0;
 }
 
-.section-faq .section-heading h2,
-.section-faq .section-heading p {
-  /* white-space: nowrap; */
+@media (min-width: 768px) {
+  .section-faq .section-heading h2,
+  .section-faq .section-heading p {
+    white-space: nowrap;
+  }
 }
 
 #cta {
@@ -1080,8 +1082,13 @@ section {
 }
 
 #cta .section-body {
-  /* white-space: nowrap; */
   color: var(--boost-muted-text);
+}
+
+@media (min-width: 768px) {
+  #cta .section-body {
+    white-space: nowrap;
+  }
 }
 
 .faq-grid {
