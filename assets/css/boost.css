@@ -1071,7 +1071,7 @@ section {
 
 .section-faq .section-heading h2,
 .section-faq .section-heading p {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #cta {
@@ -1080,7 +1080,7 @@ section {
 }
 
 #cta .section-body {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   color: var(--boost-muted-text);
 }
 
