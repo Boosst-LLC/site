@@ -514,41 +514,77 @@ section {
   color: var(--boost-text);
 }
 
-.benefits-bg {
+.benefits-hero {
   position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.benefits-bg {
+  position: absolute;
+  inset: 0;
   z-index: 0;
   overflow: hidden;
-  max-height: 500px;
 }
 
 .benefits-bg img,
 .benefits-bg video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .benefits-bg-overlay {
-  display: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  z-index: 1;
 }
 
-.benefits-bg::after {
-  display: none;
+.benefits-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  color: #fff;
 }
 
-.section-benefits--bg .section-label {
+.benefits-hero-content .section-label {
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 0.28em;
+  font-weight: 800;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+}
+
+.benefits-hero-content h2 {
+  color: #fff;
+  font-size: clamp(2.5rem, 4vw, 3.6rem);
+  line-height: 1.15;
+  margin: 0.5rem 0 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.section-benefits--bg .container .section-label {
   color: var(--boost-accent);
 }
 
-.section-benefits--bg h2 {
+.section-benefits--bg .container h2 {
   color: var(--boost-text);
   font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   margin: 0;
 }
 
 .section-benefits--bg p {
-  color: var(--boost-text);
-  font-size: 1.1rem;
+  color: var(--boost-accent);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .section-benefits--bg .benefit-toggle {

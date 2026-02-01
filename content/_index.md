@@ -46,7 +46,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< benefits
   id="services"
   label="For Property Owners & Managers"
-  heading="The Unsolved Challenge of Multifamily EV Charging"
+  heading="Solving the Challenge of<br>Multifamily EV Charging"
   body="~95% of multifamily buildings have no EV charging. Those that do often offer inconvenient, shared, and expensive options. Boosst changes that with turnkey Charging-as-a-Service."
   media="flyover.mp4"
   media_alt="Aerial view of multifamily property"

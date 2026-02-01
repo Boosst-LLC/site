@@ -2,30 +2,34 @@
 {{ $media := .Get "media" }}
 {{ if eq $mode "background" }}
   <section class="section-benefits section-benefits--bg" id="{{ .Get "id" | default "services" }}">
-    {{ if $media }}
-      {{ $resource := resources.Get (printf "img/%s" $media) }}
-      {{ if $resource }}
-        <div class="benefits-bg">
-          <div class="benefits-bg-overlay"></div>
-          {{ if eq $resource.MediaType.MainType "image" }}
-            {{ $desktop := $resource.Fill "1600x1100 center" }}
-            {{ $mobile := $resource.Fill "900x900 center" }}
-            <picture>
-              <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
-              <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}">
-            </picture>
-          {{ else if eq $resource.MediaType.MainType "video" }}
-            <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst services" }}">
-              <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
-            </video>
-          {{ end }}
-        </div>
+    <div class="benefits-hero">
+      {{ if $media }}
+        {{ $resource := resources.Get (printf "img/%s" $media) }}
+        {{ if $resource }}
+          <div class="benefits-bg">
+            <div class="benefits-bg-overlay"></div>
+            {{ if eq $resource.MediaType.MainType "image" }}
+              {{ $desktop := $resource.Fill "1600x1100 center" }}
+              {{ $mobile := $resource.Fill "900x900 center" }}
+              <picture>
+                <source media="(max-width: 767px)" srcset="{{ $mobile.RelPermalink }}">
+                <img src="{{ $desktop.RelPermalink }}" width="{{ $desktop.Width }}" height="{{ $desktop.Height }}" alt="{{ .Get "media_alt" | default "Boosst services" }}">
+              </picture>
+            {{ else if eq $resource.MediaType.MainType "video" }}
+              <video autoplay muted loop playsinline aria-label="{{ .Get "media_alt" | default "Boosst services" }}">
+                <source src="{{ $resource.RelPermalink }}" type="{{ $resource.MediaType.String }}">
+              </video>
+            {{ end }}
+          </div>
+        {{ end }}
       {{ end }}
-    {{ end }}
+      <div class="benefits-hero-content">
+        {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
+        {{ with .Get "heading" }}<h2>{{ . | safeHTML }}</h2>{{ end }}
+      </div>
+    </div>
     <div class="container">
       <div class="benefits-card">
-        {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
-        {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
         {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
         <div class="benefit-list">
           {{ .Inner }}
@@ -38,7 +42,7 @@
     <div class="container">
       <div class="benefits-copy">
         {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
-        {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .Get "heading" }}<h2>{{ . | safeHTML }}</h2>{{ end }}
         {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
         <div class="benefit-list">
           {{ .Inner }}
