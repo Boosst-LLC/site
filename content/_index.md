@@ -30,29 +30,6 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   {{< problem-card icon="&#128663;" title="No residents fighting for plugs" body="Every driver gets a dedicated overnight charger instead of battling queues." >}}
 {{< /problem-grid >}}
 
-{{< benefits
-  id="services"
-  label="For Property Owners & Managers"
-  heading="EV Charging-as-a-Service that just works"
-  body="Boosst funds the install, manages the energy, and supports your residents so you can market a premium amenity from day one."
-  media="car2.mp4"
-  media_alt="Boosst hardware recap video"
-  mode="background"
->}}
-  {{< benefit-item title="Zero upfront or ongoing cost" open="true" >}}
-  We finance site feasibility, permitting, installation, and hardware so CAPEX and OPEX stay at zero.
-  {{< /benefit-item >}}
-  {{< benefit-item title="Smart energy management" >}}
-  Dynamic Load Management technology balances chargers across 10&ndash;40A to avoid panel upgrades.
-  {{< /benefit-item >}}
-  {{< benefit-item title="Expandable + future-proof" >}}
-  Modular infrastructure grows alongside demand so every stall can be electrified over time.
-  {{< /benefit-item >}}
-  {{< benefit-item title="Increased NOI" >}}
-  Attract and retain high-value tenants with a differentiated amenity backed by predictable revenue share.
-  {{< /benefit-item >}}
-{{< /benefits >}}
-
 {{< simplicity
   id="residents"
   label="For Residents"
@@ -66,6 +43,50 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   {{< simplicity-feature title="Fast, failsafe charging" >}}Enjoy up to 48A (11.5kW) charging speeds. Boosst charges even if network connectivity drops, so you'll always be able to charge!{{< /simplicity-feature >}}
   {{< simplicity-feature title="Boosst App" >}}Track usage, monitor charging status, manage billing, and request 24/7 support directly from the app.{{< /simplicity-feature >}}
 {{< /simplicity >}}
+
+{{< benefits
+  id="services"
+  label="For Property Owners & Managers"
+  heading="The Unsolved Challenge of Multifamily EV Charging"
+  body="~95% of multifamily buildings have no EV charging. Those that do often offer inconvenient, shared, and expensive options. Boosst changes that with turnkey Charging-as-a-Service."
+  media="flyover.mp4"
+  media_alt="Aerial view of multifamily property"
+  mode="background"
+>}}
+{{< benefit-content >}}
+### The Boosst Solution
+
+- **Zero CAPEX, zero OPEX** — We finance site feasibility, permitting, installation, and hardware
+- **Dedicated personal chargers** — Every resident gets their own charger instead of sharing
+- **No electrical upgrades** — <span class="highlight">trueboosst</span>&trade; DLM balances chargers across 10–40A within existing infrastructure
+- **Complete turnkey service** — Site assessment, design, permits, installation, billing, 24/7 support, and maintenance
+
+### Why It Matters
+
+- **90% of EV charging happens at home** — Apartment residents deserve the same convenience
+- **EV adoption is surging** — Tenants expect on-site charging like internet or a gym
+- **Retain high-value renters** — Properties without charging risk losing EV-driving tenants
+
+### The Impact
+
+- **Increased NOI and property value** through premium amenity offerings
+- **Higher tenant retention** with hassle-free, dedicated charging
+- **Future-proof properties** ready for growing EV demand
+
+### The Problems with Public Charging
+
+Without on-site charging, residents face:
+- Out-of-service or inoperable chargers
+- Slow charging speeds and long waits
+- Payment hassles and connectivity issues
+- Hidden fees and misleading pricing
+- Occupied spots and inconvenient locations
+
+---
+
+*If you have an existing shared charging solution, we are potentially open to acquiring it.*
+{{< /benefit-content >}}
+{{< /benefits >}}
 
 {{< location-map
   id="deployments"
