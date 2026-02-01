@@ -35,11 +35,10 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   label="For Residents"
   heading="Convenient, reliable charging just for you!"
   body="Residents plug in overnight at home to their fast, reliable chargers plus a connected app for total control."
-  media="7645d73e-ca81-4b15-97f0-2c5738c3b7e6.JPG"
-  media_alt="Resident plugging in an EV"
-  media_gallery="app_user.webp,app_breakdown.webp,support.webp"
+  media="car2.mp4"
+  media_alt="Boosst hardware recap video"
 >}}
-  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list and hassles - Boosst assigns a personal charger with gauranteed overnight access - unlocked via an RFID card - tap to charge! _Compatible with all EV brands._{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list and hassles - Boosst assigns a personal charger with guaranteed overnight access - unlocked via an RFID card - tap to charge! _Compatible with all EV brands._{{< /simplicity-feature >}}
   {{< simplicity-feature title="Fast, failsafe charging" >}}Enjoy up to 48A (11.5kW) charging speeds. Boosst charges even if network connectivity drops, so you'll always be able to charge!{{< /simplicity-feature >}}
   {{< simplicity-feature title="Boosst App" >}}Track usage, monitor charging status, manage billing, and request 24/7 support directly from the app.{{< /simplicity-feature >}}
 {{< /simplicity >}}
