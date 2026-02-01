@@ -372,11 +372,16 @@ section {
   color: var(--boost-muted-text);
 }
 
-.section-benefits .container,
-.section-simplicity .container {
+.section-benefits .container {
   display: grid;
   gap: 3rem;
   align-items: center;
+}
+
+.section-simplicity .container {
+  display: grid;
+  gap: 3rem;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -400,7 +405,7 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: clamp(2rem, 4vw, 3rem);
   box-shadow: 0 35px 65px rgba(15, 23, 42, 0.3);
-  max-width: 820px;
+  max-width: 100%;
 }
 
 .section-label {
@@ -411,13 +416,24 @@ section {
   font-weight: 600;
 }
 
-.benefits-media,
-.simplicity-media {
+.benefits-media {
   border-radius: var(--boost-radius);
   overflow: hidden;
   background: var(--boost-surface);
   border: 1px solid var(--boost-border-subtle);
   min-height: 320px;
+}
+
+.simplicity-media {
+  border-radius: var(--boost-radius);
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  margin-top: 10.5rem;
+}
+
+.simplicity-media video {
+  display: block;
 }
 
 .benefit-list {
@@ -472,16 +488,16 @@ section {
 .section-benefits--bg {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(4rem, 7vw, 7rem);
+  padding-block: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-benefits--bg .container {
   position: relative;
   z-index: 2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  min-height: min(85vh, 680px);
+  display: block;
+  padding-block: clamp(3rem, 5vw, 5rem);
 }
 
 .section-benefits--bg .benefit-list {
@@ -499,40 +515,40 @@ section {
 }
 
 .benefits-bg {
-  position: absolute;
-  inset: 0;
+  position: relative;
   z-index: 0;
   overflow: hidden;
+  max-height: 500px;
 }
 
 .benefits-bg img,
 .benefits-bg video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
+  height: auto;
+  display: block;
 }
 
 .benefits-bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25));
-  z-index: 1;
-  pointer-events: none;
+  display: none;
 }
 
 .benefits-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.12), transparent 55%);
+  display: none;
 }
 
-.section-benefits--bg .section-label,
-.section-benefits--bg h2,
+.section-benefits--bg .section-label {
+  color: var(--boost-accent);
+}
+
+.section-benefits--bg h2 {
+  color: var(--boost-text);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  margin: 0;
+}
+
 .section-benefits--bg p {
   color: var(--boost-text);
+  font-size: 1.1rem;
 }
 
 .section-benefits--bg .benefit-toggle {
@@ -562,7 +578,7 @@ section {
 }
 
 .benefit-list--presentation h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin: 2rem 0 0.5rem;
   color: var(--boost-text);
   font-weight: 600;
@@ -582,6 +598,7 @@ section {
   margin: 0;
   padding-left: 1.25rem;
   color: var(--boost-muted-text);
+  font-size: 1.05rem;
 }
 
 .benefit-list--presentation li {
@@ -982,9 +999,22 @@ section {
   border-bottom: 1px solid var(--boost-border-subtle);
 }
 
-.section-problems,
+.section-problems {
+  background: transparent;
+  padding-top: 0;
+}
+
 .section-benefits {
   background: transparent;
+}
+
+.section-simplicity .simplicity-copy .section-label {
+  margin-bottom: -1rem;
+}
+
+.section-simplicity .simplicity-copy h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
 }
 
 .section-simplicity .simplicity-copy h3 {
@@ -999,10 +1029,27 @@ section {
 
 .section-faq {
   background: var(--boost-bg);
+  padding-top: clamp(1rem, 1.5vw, 1.625rem);
+  padding-bottom: 0;
+}
+
+.section-faq .section-heading h2,
+.section-faq .section-heading p {
+  white-space: nowrap;
+}
+
+#cta {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+#cta .section-body {
+  white-space: nowrap;
+  color: var(--boost-muted-text);
 }
 
 .faq-grid {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: grid;
   gap: 1.25rem;
 }
