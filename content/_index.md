@@ -17,7 +17,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   id="about"
   label="ABOUT BOOSST"
   heading="Overnight charging, zero hassle."
-  body="EV drivers overwhelmingly prefer to charge at home, and for millions of us living in apartments without dedicated chargers, that’s not an option. Although nearly 90% of EV charging happens at home, most multifamily buildings lack reliable, convenient solutions. We just want to come home, plug in, and charge overnight – just like you charge your phone."
+  body="EV drivers overwhelmingly prefer to charge at home, and for millions of those living in apartments without dedicated chargers, that's not an option. Although nearly 90% of EV charging happens at home, most multifamily buildings lack reliable, convenient solutions. People just want to come home, plug in, and charge overnight – just like they charge their phones."
   subbody="Now, finally, with Boosst you can charge hassle free with your personal, dedicated charger in your very own parking spot!"
   image="img/wall_charger.png"
   image_alt="A Boosst charger mounted at a multifamily property"
@@ -100,8 +100,7 @@ Without on-site charging, residents face:
     "label": "Seattle Metro",
     "locations": [
       { "label": "Saxe Apartments — 2402 NE 65th St #100, Seattle, WA 98115", "lat": 47.676027276040166, "lng": -122.30144844603447 },
-      { "label": "Stazione25 — 2715 25th Ave S, Seattle, WA 98144", "lat": 47.578826573487426, "lng": -122.30071593068966 },
-      { "label": "Aria Apartments — 636 W 6th St, Vancouver, WA 98660", "lat": 45.62631402906352, "lng": -122.67742313068968 }
+      { "label": "Stazione25 — 2715 25th Ave S, Seattle, WA 98144", "lat": 47.578826573487426, "lng": -122.30071593068966 }
     ]
   }
 ]
@@ -122,7 +121,7 @@ Without on-site charging, residents face:
   Our Dynamic Load Management platform orchestrates every charger to stay within your panel limits, removing the need for costly utility upgrades.
   {{< /faq-item >}}
   {{< faq-item question="What do residents experience?" >}}
-  Each resident receives a dedicated charger with 10&ndash;40A speeds, seamless connectivity, and a Boosst mobile app to track charging and payments.
+  Each resident receives a dedicated charger with 10&ndash;48A speeds, seamless connectivity, and a Boosst mobile app to track charging and payments.
   {{< /faq-item >}}
   {{< faq-item question="Who handles support after installation?" >}}
   Boosst manages 24/7 support, proactive maintenance, and field service dispatch so your team never has to troubleshoot a station.
