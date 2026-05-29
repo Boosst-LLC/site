@@ -88,10 +88,10 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 
 {{< faq heading="Questions we hear from property teams" intro="Our turnkey model keeps owners, managers, and residents aligned from day one." >}}
   {{< faq-item question="What do you mean by Charging-as-a-Service?" >}}
-  Boosst funds installation, owns the hardware, and operates support so you can offer charging without touching CAPEX, OPEX, billing, or maintenance.
+  Boosst funds installation, owns the hardware, and provides the service, so you can offer charging without touching CAPEX, OPEX, billing, support, maintenance, or ongoing operations.
   {{< /faq-item >}}
   {{< faq-item question="How is energy managed?" >}}
-  Our Dynamic Load Management platform orchestrates every charger to stay within your panel limits, removing the need for costly utility upgrades.
+  Our {{< trueboosst >}} DLM (Dynamic Load Management) platform orchestrates every charger to stay within your panel limits, removing the need for costly utility upgrades.
   {{< /faq-item >}}
   {{< faq-item question="What do residents experience?" >}}
   Each resident receives a dedicated charger with 10&ndash;48A speeds, seamless connectivity, an RFID card/fob to initiate charging, and the Boosst app to track charging and payments.
