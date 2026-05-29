@@ -81,7 +81,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 
 {{< ecosystem
   heading="A complete EV Charging ecosystem, delivered"
-  body="Boosst provides overnight access, easy-to-use mobile apps, and seamless charging across all EV brands."
+  body="Boosst provides dedicated access, easy-to-use RFID cards and fobs, and seamless charging across all EV brands."
   media="32ace619-9997-45ab-8724-0406ea365c84.JPG"
   alt="EV chargers staged for property residents"
 >}}
