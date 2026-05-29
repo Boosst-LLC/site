@@ -27,11 +27,12 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< simplicity
   id="residents"
   label="FOR RESIDENTS"
-  heading="Convenient, reliable charging just for you."
-  body="Residents plug in at home to their fast, reliable chargers. *Charge with a tap, not an app.*"
+  heading="Convenient, dedicated charging just for you."
+  body="Residents plug in at home to their fast, reliable chargers."
+  subbody="*Charge with a tap, not an app.*"
   media="car2.mp4"
   media_alt="Boosst hardware recap video"
-  caption="Subscription-Based Charging-as-a-Service — Pay a low monthly fee for a dedicated charger, plus electricity based on actual consumption — the more you charge, the less you pay."
+  caption="Subscription-based Charging-as-a-Service — Pay a low monthly fee for a dedicated charger, plus electricity based on actual consumption — the more you charge, the less you pay."
   caption_italic="Easy, transparent charging with the freedom to cancel anytime."
   caption_cta="Let us Boosst your ride!"
 >}}

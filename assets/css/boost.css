@@ -223,7 +223,7 @@ section {
 }
 
 .hero-eyebrow {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.28em;
   color: #ffffff;
@@ -395,7 +395,11 @@ section {
 .simplicity-copy {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
+}
+
+.simplicity-copy .feature-list {
+  margin-top: 1rem;
 }
 
 .benefits-card {
@@ -409,7 +413,7 @@ section {
 }
 
 .section-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--boost-accent);
@@ -526,6 +530,7 @@ section {
 
 .section-benefits--bg .section-problems .section-heading p {
   color: var(--boost-muted-text);
+  white-space: nowrap;
 }
 
 .section-benefits--bg .section-problems .problem-card {
@@ -618,7 +623,7 @@ section {
 
 .benefits-hero-content .section-label {
   color: #fff;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   letter-spacing: 0.28em;
   font-weight: 800;
   text-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
@@ -730,6 +735,17 @@ section {
   padding: 1rem;
   background: var(--boost-accent-soft);
   border-radius: var(--boost-radius);
+}
+
+.simplicity-feature strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.simplicity-feature p {
+  font-size: 0.925rem;
+  margin: 0;
 }
 
 .simplicity-carousel {
@@ -1111,7 +1127,7 @@ section {
 }
 
 .section-simplicity .simplicity-copy .section-label {
-  margin-bottom: -1rem;
+  margin-bottom: 0;
 }
 
 .section-simplicity .simplicity-copy h2 {
@@ -1130,8 +1146,18 @@ section {
   font-size: 1.1rem;
 }
 
+.simplicity-body-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.simplicity-body-group p {
+  margin: 0;
+}
+
 .section-simplicity .simplicity-copy p + p {
-  margin-top: 0;
+  margin-top: 0.5rem;
 }
 
 .section-faq {
