@@ -94,7 +94,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   Our Dynamic Load Management platform orchestrates every charger to stay within your panel limits, removing the need for costly utility upgrades.
   {{< /faq-item >}}
   {{< faq-item question="What do residents experience?" >}}
-  Each resident receives a dedicated charger with 10&ndash;48A speeds, seamless connectivity, and a Boosst mobile app to track charging and payments.
+  Each resident receives a dedicated charger with 10&ndash;48A speeds, seamless connectivity, an RFID card/fob to initiate charging, and the Boosst app to track charging and payments.
   {{< /faq-item >}}
   {{< faq-item question="Who handles support after installation?" >}}
   Boosst manages 24/7 support, proactive maintenance, and field service dispatch so your team never has to troubleshoot a station.
