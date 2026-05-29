@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="benefits-card">
+    {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+    <div class="benefit-list">
+      {{ .Inner }}
+    </div>
+  </div>
+</div>

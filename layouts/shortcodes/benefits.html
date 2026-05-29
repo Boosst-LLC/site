@@ -28,14 +28,7 @@
         {{ with .Get "heading" }}<h2>{{ . | safeHTML }}</h2>{{ end }}
       </div>
     </div>
-    <div class="container">
-      <div class="benefits-card">
-        {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
-        <div class="benefit-list">
-          {{ .Inner }}
-        </div>
-      </div>
-    </div>
+    {{ .Inner }}
   </section>
 {{ else }}
   <section class="section-benefits" id="{{ .Get "id" | default "services" }}">

@@ -5,8 +5,8 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 
 {{< hero
   eyebrow="EV charging for multifamily"
-  title="EV Charging at your apartment should be as simple as charging your phone"
-  subtitle="Boosst provides EV Charging-as-a-Service, allowing multifamily residents to plug in and charge overnight in their own parking spot - reliably and hassle free!"
+  title="EV Charging at your apartment made simple"
+  subtitle="Boosst provides EV Charging-as-a-Service — a dedicated charger, in your own spot, hassle-free. Let us Boosst your ride!"
   primary_label="Contact us"
   primary_url="/contact/"
   media="car.mp4"
@@ -16,75 +16,44 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< section-intro
   id="about"
   label="ABOUT BOOSST"
-  heading="Overnight charging, zero hassle."
-  body="EV drivers overwhelmingly prefer to charge at home, and for millions of those living in apartments without dedicated chargers, that's not an option. Although nearly 90% of EV charging happens at home, most multifamily buildings lack reliable, convenient solutions. People just want to come home, plug in, and charge overnight – just like they charge their phones."
-  subbody="Now, finally, with Boosst you can charge hassle free with your personal, dedicated charger in your very own parking spot!"
+  heading="Reliable, overnight charging. Zero hassle."
+  body="EV drivers overwhelmingly prefer to charge at home. But for millions living in apartments without dedicated chargers, that's not an option. Although nearly 90% of EV charging happens at home, most buildings lack reliable, convenient solutions. People just want to come home, plug in, and charge overnight – like they charge their phones."
+  subbody="*You can charge during the day, too.*"
+  subbody2="**With Boosst, you can finally charge hassle-free with a personal, dedicated charger in your very own parking spot!**"
   image="img/wall_charger.png"
   image_alt="A Boosst charger mounted at a multifamily property"
 >}}
-
-{{< problem-grid heading="Why properties switch to Boosst" intro="We solve the hidden friction that keeps chargers from being deployed at scale." >}}
-  {{< problem-card icon="&#9888;" title="No unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
-  {{< problem-card icon="&#128184;" title="No costly electrical upgrades" body="Dynamic Load Management (DLM) squeezes more power from existing infrastructure, avoiding heavy CAPEX." >}}
-  {{< problem-card icon="&#128736;" title="No staff bandwidth" body="Boosst handles feasibility, permitting, installation, billing, support, and maintenance." >}}
-  {{< problem-card icon="&#128663;" title="No residents fighting for plugs" body="Every driver gets a dedicated overnight charger instead of battling queues." >}}
-{{< /problem-grid >}}
 
 {{< simplicity
   id="residents"
   label="FOR RESIDENTS"
   heading="Convenient, reliable charging just for you."
-  body="Residents plug in overnight at home to their fast, reliable chargers plus a connected app for total control."
+  body="Residents plug in at home to their fast, reliable chargers. *Charge with a tap, not an app.*"
   media="car2.mp4"
   media_alt="Boosst hardware recap video"
 >}}
-  {{< simplicity-feature title="Your own charger" >}}Skip the waiting list and hassles - Boosst assigns a personal charger with guaranteed overnight access - unlocked via an RFID card - tap to charge! _Compatible with all EV brands._{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Finally, your own charger" >}}Skip the waiting list and hassles — eliminate charger anxiety. Boosst assigns a personal charger with dedicated access. _Compatible with all EV brands._{{< /simplicity-feature >}}
   {{< simplicity-feature title="Fast, failsafe charging" >}}Enjoy up to 48A (11.5kW) charging speeds. Boosst charges even if network connectivity drops, so you'll always be able to charge!{{< /simplicity-feature >}}
-  {{< simplicity-feature title="Boosst App" >}}Track usage, monitor charging status, manage billing, and request 24/7 support directly from the app.{{< /simplicity-feature >}}
+  {{< simplicity-feature title="Charge with a tap. Track charges with our app." >}}Charge with an RFID card/fob. Track usage, monitor charging status, manage billing, and request 24/7 support from the Boosst app.{{< /simplicity-feature >}}
 {{< /simplicity >}}
 
 {{< benefits
   id="services"
   label="For Property Owners & Managers"
   heading="Solving the Challenge of<br>Multifamily EV Charging"
-  body="~95% of multifamily buildings have no EV charging. Those that do often offer inconvenient, shared, and expensive options. Boosst changes that with turnkey Charging-as-a-Service."
   media="flyover.mp4"
   media_alt="Aerial view of multifamily property"
   mode="background"
 >}}
+{{< problem-grid heading="Why properties switch to Boosst" intro="We solve the hidden friction that keeps chargers from being deployed at scale." >}}
+  {{< problem-card icon="&#128184;" title="Zero CAPEX, zero OPEX" body="Boosst provides a valuable asset and service — increasing NOI and property value — at no cost to ownership." >}}
+  {{< problem-card icon="&#128736;" title="No staff bandwidth" body="Boosst handles feasibility, permitting, installation, billing, support, maintenance, and ongoing operations." >}}
+  {{< problem-card icon="&#9888;" title="No unreliable shared stations" body="Slow, shared charging leaves residents frustrated and searching for public options." >}}
+  {{< problem-card icon="&#128663;" title="No residents fighting for chargers" body="Every EV driver gets a dedicated charger instead of waiting in line." >}}
+{{< /problem-grid >}}
+{{< benefit-card body="~95% of multifamily buildings have no EV charging. Those that do often offer inconvenient, shared, and expensive options. Boosst changes that with turnkey Charging-as-a-Service." >}}
 {{< benefit-content >}}
-### The Boosst Solution
-
-- **Zero CAPEX, zero OPEX** — We finance site feasibility, permitting, installation, and hardware
-- **Dedicated personal chargers** — Every resident gets their own charger instead of sharing
-- **No electrical upgrades** — <span class="highlight">trueboosst</span>&trade; DLM balances chargers across 10–40A within existing infrastructure
-- **Complete turnkey service** — Site assessment, design, permits, installation, billing, 24/7 support, and maintenance
-
-### Why It Matters
-
-- **90% of EV charging happens at home** — Apartment residents deserve the same convenience
-- **EV adoption is surging** — Tenants expect on-site charging like internet or a gym
-- **Retain high-value renters** — Properties without charging risk losing EV-driving tenants
-
-### The Impact
-
-- **Increased NOI and property value** through premium amenity offerings
-- **Higher tenant retention** with hassle-free, dedicated charging
-- **Future-proof properties** ready for growing EV demand
-
-### The Problems with Public Charging
-
-Without on-site charging, residents face:
-- Out-of-service or inoperable chargers
-- Slow charging speeds and long waits
-- Payment hassles and connectivity issues
-- Hidden fees and misleading pricing
-- Occupied spots and inconvenient locations
-
----
-
-*If you have an existing shared charging solution, we are potentially open to acquiring it.*
-{{< /benefit-content >}}
+{{< /benefit-card >}}
 {{< /benefits >}}
 
 {{< location-map

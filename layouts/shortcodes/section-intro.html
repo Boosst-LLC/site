@@ -2,6 +2,7 @@
 {{- $heading := .Get "heading" -}}
 {{- $body := .Get "body" -}}
 {{- $subbody := .Get "subbody" -}}
+{{- $subbody2 := .Get "subbody2" -}}
 {{- $image := .Get "image" -}}
 {{- $imageAlt := .Get "image_alt" -}}
 {{- $imageSrc := "" -}}
@@ -22,6 +23,7 @@
         {{ with $heading }}<h2>{{ . }}</h2>{{ end }}
         {{ with $body }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
         {{ with $subbody }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
+        {{ with $subbody2 }}<div class="section-body">{{ . | markdownify }}</div>{{ end }}
       </div>
       <div class="section-intro__media">
         <div class="section-intro__media-frame">

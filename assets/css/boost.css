@@ -240,7 +240,7 @@ section {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
   max-width: 34rem;
 }
@@ -485,6 +485,38 @@ section {
   color: var(--boost-accent);
 }
 
+.section-benefits--bg .section-problems {
+  background: var(--boost-bg);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.section-benefits--bg .section-problems .section-heading h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  color: var(--boost-text);
+}
+
+.section-benefits--bg .section-problems .section-heading p {
+  color: var(--boost-muted-text);
+}
+
+.section-benefits--bg .section-problems .problem-card {
+  background-color: var(--boost-surface);
+  color: var(--boost-text);
+  align-items: center;
+}
+
+.section-benefits--bg .section-problems .problem-icon {
+  width: 64px;
+  height: 64px;
+  font-size: 1.75rem;
+}
+
+.section-benefits--bg .section-problems .problem-body {
+  color: var(--boost-muted-text);
+  font-size: 0.975rem;
+}
+
 .section-benefits--bg {
   position: relative;
   overflow: hidden;
@@ -497,7 +529,8 @@ section {
   position: relative;
   z-index: 2;
   display: block;
-  padding-block: clamp(3rem, 5vw, 5rem);
+  padding-top: 0;
+  padding-bottom: clamp(3rem, 5vw, 5rem);
 }
 
 .section-benefits--bg .benefit-list {
@@ -653,6 +686,11 @@ section {
 
 .benefit-list--presentation .highlight {
   color: var(--boost-accent);
+}
+
+.tb-true {
+  color: var(--boost-text);
+  font-style: italic;
 }
 
 .section-simplicity .feature-list {
@@ -1061,6 +1099,11 @@ section {
 .section-simplicity .simplicity-copy p {
   margin: 0;
   color: var(--boost-muted-text);
+  font-size: 1.1rem;
+}
+
+.section-simplicity .simplicity-copy p + p {
+  margin-top: 0;
 }
 
 .section-faq {
@@ -1079,6 +1122,11 @@ section {
 #cta {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
+}
+
+#about .section-body {
+  font-size: 1.1rem;
+  line-height: 1.75;
 }
 
 #cta .section-body {

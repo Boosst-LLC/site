@@ -85,7 +85,8 @@
     <div class="simplicity-copy">
       {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}
       {{ with .Get "heading" }}<h2>{{ . }}</h2>{{ end }}
-      {{ with .Get "body" }}<p>{{ . }}</p>{{ end }}
+      {{ with .Get "body" }}<p>{{ . | markdownify }}</p>{{ end }}
+      {{ with .Get "subbody" }}<p>{{ . }}</p>{{ end }}
       <div class="feature-list">
         {{ .Inner }}
       </div>
