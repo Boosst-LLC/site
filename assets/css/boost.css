@@ -455,7 +455,7 @@ section {
 }
 
 .simplicity-caption--cta {
-  color: var(--boost-text);
+  color: var(--boost-muted-text);
   font-weight: 700;
   margin-top: 0.5rem;
 }
