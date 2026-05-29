@@ -26,6 +26,7 @@
       {{- $carouselId = printf "simplicity-carousel-%d" $counter -}}
     {{- end -}}
 
+    <div class="simplicity-media-wrap">
     <div class="simplicity-media">
       {{- if $carouselId -}}
         <div id="{{ $carouselId }}" class="simplicity-carousel" data-resident-carousel>
@@ -81,6 +82,10 @@
           <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType.String }}">
         </video>
       {{- end -}}
+    </div>
+    {{ with .Get "caption" }}<p class="simplicity-caption">{{ . }}</p>{{ end }}
+    {{ with .Get "caption_italic" }}<p class="simplicity-caption simplicity-caption--italic">{{ . }}</p>{{ end }}
+    {{ with .Get "caption_cta" }}<p class="simplicity-caption simplicity-caption--cta">{{ . }}</p>{{ end }}
     </div>
     <div class="simplicity-copy">
       {{ with .Get "label" }}<span class="section-label">{{ . }}</span>{{ end }}

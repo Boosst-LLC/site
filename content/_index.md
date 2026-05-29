@@ -31,6 +31,9 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   body="Residents plug in at home to their fast, reliable chargers. *Charge with a tap, not an app.*"
   media="car2.mp4"
   media_alt="Boosst hardware recap video"
+  caption="Subscription-Based Charging-as-a-Service — Pay a low monthly fee for a dedicated charger, plus electricity based on actual consumption — the more you charge, the less you pay."
+  caption_italic="Easy, transparent charging with the freedom to cancel anytime."
+  caption_cta="Let us Boosst your ride!"
 >}}
   {{< simplicity-feature title="Finally, your own charger" >}}Skip the waiting list and hassles — eliminate charger anxiety. Boosst assigns a personal charger with dedicated access. _Compatible with all EV brands._{{< /simplicity-feature >}}
   {{< simplicity-feature title="Fast, failsafe charging" >}}Enjoy up to 48A (11.5kW) charging speeds. Boosst charges even if network connectivity drops, so you'll always be able to charge!{{< /simplicity-feature >}}

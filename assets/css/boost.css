@@ -429,7 +429,35 @@ section {
   overflow: hidden;
   background: transparent;
   border: none;
-  margin-top: 10.5rem;
+  margin-top: 0;
+}
+
+.simplicity-media-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.simplicity-media {
+  margin-bottom: 1.25rem;
+}
+
+.simplicity-caption {
+  font-size: 1.1rem;
+  color: var(--boost-muted-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.simplicity-caption--italic {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.simplicity-caption--cta {
+  color: var(--boost-text);
+  font-weight: 700;
+  margin-top: 0.5rem;
 }
 
 .simplicity-media video {
