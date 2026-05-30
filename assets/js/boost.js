@@ -99,6 +99,15 @@
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (!header) return;
+        header.classList.add('is-hidden');
+        header.classList.remove('is-visible');
+        requestAnimationFrame(() => { lastScrollY = window.scrollY; });
+      });
+    });
+
     const heroVideo = document.querySelector('.hero .hero-media-bg video');
     if (heroVideo) {
       heroVideo.playbackRate = 0.5;
