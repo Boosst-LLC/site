@@ -1120,11 +1120,14 @@ section {
   background: var(--boost-surface);
   border-top: 1px solid var(--boost-border-subtle);
   border-bottom: 1px solid var(--boost-border-subtle);
+}
+
+.simplicity-media-wrap {
   scroll-margin-top: 100px;
 }
 
 @media (max-width: 767px) {
-  .section-simplicity {
+  .simplicity-media-wrap {
     scroll-margin-top: 160px;
   }
 }

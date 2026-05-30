@@ -1,4 +1,4 @@
-<section class="section-simplicity" id="{{ .Get "id" | default "residents" }}">
+<section class="section-simplicity">
   <div class="container">
     {{- $mediaAlt := .Get "media_alt" | default "Boosst simplicity" -}}
     {{- $slides := slice -}}
@@ -26,7 +26,7 @@
       {{- $carouselId = printf "simplicity-carousel-%d" $counter -}}
     {{- end -}}
 
-    <div class="simplicity-media-wrap">
+    <div class="simplicity-media-wrap" id="{{ .Get "id" | default "residents" }}">
     <div class="simplicity-media">
       {{- if $carouselId -}}
         <div id="{{ $carouselId }}" class="simplicity-carousel" data-resident-carousel>
