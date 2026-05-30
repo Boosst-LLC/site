@@ -101,4 +101,4 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
   {{< /faq-item >}}
 {{< /faq >}}
 
-{{< section-intro id="cta" body="Boosst handles everything--so property owners, management teams, and their residents don't have to." >}}
+{{< section-intro id="cta" body="Boosst handles everything — so property owners, management teams, and their residents don't have to." >}}
