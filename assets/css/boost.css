@@ -273,6 +273,16 @@ section {
   height: 100%;
   object-fit: cover;
 }
+.section-intro {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .section-intro {
+    scroll-margin-top: 8px;
+  }
+}
+
 .section-intro__grid {
   display: grid;
   gap: clamp(1.5rem, 4vw, 3rem);
