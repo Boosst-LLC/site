@@ -6,7 +6,7 @@ description = "Boosst delivers EV Charging-as-a-Service for multifamily properti
 {{< hero
   eyebrow="EV charging for multifamily"
   title="EV Charging at your apartment made simple"
-  subtitle="Boosst provides EV Charging-as-a-Service — a dedicated charger, in your own spot, hassle-free. Let us Boosst your ride!"
+  subtitle="Boosst provides EV Charging-as-a-Service — a dedicated charger, in your own spot, hassle-free.<br><strong>Let us Boosst your ride!</strong>"
   primary_label="Contact us"
   primary_url="/contact/"
   media="car.mp4"
