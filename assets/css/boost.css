@@ -530,7 +530,12 @@ section {
 
 .section-benefits--bg .section-problems .section-heading p {
   color: var(--boost-muted-text);
-  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .section-benefits--bg .section-problems .section-heading p {
+    white-space: nowrap;
+  }
 }
 
 .section-benefits--bg .section-problems .problem-card {
