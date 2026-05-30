@@ -1128,7 +1128,7 @@ section {
 
 @media (max-width: 767px) {
   .simplicity-media-wrap {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 8px;
   }
 }
 

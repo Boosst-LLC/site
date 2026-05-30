@@ -101,7 +101,7 @@
 
     document.querySelectorAll('.nav-links a').forEach((link) => {
       link.addEventListener('click', () => {
-        if (!header) return;
+        if (!header || window.innerWidth >= 768) return;
         header.classList.add('is-hidden');
         header.classList.remove('is-visible');
         requestAnimationFrame(() => { lastScrollY = window.scrollY; });
