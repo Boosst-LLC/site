@@ -100,7 +100,7 @@
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    document.querySelectorAll('.nav-links a, .footer-nav a[href^="#"]').forEach((link) => {
+    document.querySelectorAll('.nav-links a, .footer-nav a[href^="#"], .footer-nav a[href^="/#"]').forEach((link) => {
       link.addEventListener('click', () => {
         if (!header || window.innerWidth >= 768) return;
         header.classList.add('is-hidden');
