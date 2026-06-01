@@ -527,6 +527,16 @@ section {
   color: var(--boost-accent);
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
 .section-benefits--bg .section-problems {
   background: var(--boost-bg);
   padding-top: 1.5rem;
