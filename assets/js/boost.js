@@ -84,13 +84,14 @@
 
     const header = document.querySelector('.site-header');
     let lastScrollY = window.scrollY;
+    let anchorNavActive = false;
     const handleScroll = () => {
       if (!header) return;
       const current = window.scrollY;
       if (current > lastScrollY + 5 && current > 80) {
         header.classList.add('is-hidden');
         header.classList.remove('is-visible');
-      } else if (current < lastScrollY - 5) {
+      } else if (current < lastScrollY - 5 && !anchorNavActive) {
         header.classList.remove('is-hidden');
         header.classList.add('is-visible');
       }
@@ -104,7 +105,11 @@
         if (!header || window.innerWidth >= 768) return;
         header.classList.add('is-hidden');
         header.classList.remove('is-visible');
-        requestAnimationFrame(() => { lastScrollY = window.scrollY; });
+        anchorNavActive = true;
+        setTimeout(() => {
+          anchorNavActive = false;
+          lastScrollY = window.scrollY;
+        }, 600);
       });
     });
 
