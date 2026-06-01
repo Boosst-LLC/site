@@ -1192,6 +1192,11 @@ section {
   padding-bottom: 0;
 }
 
+.section-faq .highlight {
+  color: var(--boost-accent);
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .section-faq .section-heading h2,
   .section-faq .section-heading p {
