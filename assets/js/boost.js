@@ -102,10 +102,17 @@
 
     document.querySelectorAll('.nav-links a, .footer-nav a[href^="#"], .footer-nav a[href^="/#"], .footer-nav a[href^="./#"]').forEach((link) => {
       link.addEventListener('click', () => {
-        if (!header || window.innerWidth >= 768) return;
+        if (!header) return;
+        anchorNavActive = true;
+        if (window.innerWidth >= 768) {
+          setTimeout(() => {
+            anchorNavActive = false;
+            lastScrollY = window.scrollY;
+          }, 600);
+          return;
+        }
         header.classList.add('is-hidden');
         header.classList.remove('is-visible');
-        anchorNavActive = true;
         setTimeout(() => {
           anchorNavActive = false;
           lastScrollY = window.scrollY;
